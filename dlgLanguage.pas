@@ -82,8 +82,9 @@ begin
   begin
     Name := WithoutExt(sr[i].Name);
     Flag := TBitmap.Create;
-    s := LanguageDir + Name + '.png';
-    if FileExists(s) then pngLoadFromFileBM(Flag, s, clWhite);
+    { #todo 1 -oiso4free : change to BGRABitmap }
+    {s := LanguageDir + Name + '.png';
+    if FileExists(s) then pngLoadFromFileBM(Flag, s, clWhite);  }
   end;
 
   // minimumsort by name

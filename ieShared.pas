@@ -20,10 +20,10 @@ unit ieShared;
 interface
 
 uses
-  LclIntf, LclType, FileUtil, Process,
+  LclIntf, LclType, FileUtil, Process, LazUTF8,
   SysUtils, Types, Classes, Controls, StdCtrls, ExtCtrls, ComCtrls,
   Graphics, Forms, Math, Menus,
-  Buttons, Clipbrd, IniFiles, BitmapEx, bmExUtils, PNG, Dialogs, dlgDebug;
+  Buttons, Clipbrd, IniFiles, BitmapEx, bmExUtils, {PNG,} Dialogs, dlgDebug;
 
 const
   sGreenfishHomepage = 'http://greenfishsoftware.blogspot.com/';
@@ -645,9 +645,10 @@ function TabAtPos;
 var
   i: integer;
 begin
-  i := pc.TabIndexAtClientPos(p);
+ { #todo 1 -oiso4free : what is pc? }
+{  i := pc.TabIndexAtClientPos(p);
   if (i >= 0) and (i < pc.PageCount) then
-    Exit(pc.Pages[i]);
+    Exit(pc.Pages[i]);  }
   Exit(nil);
 end;
 
@@ -924,17 +925,18 @@ initialization
 
   // load resources
   bmToolbar := TBitmap.Create;
-  pngLoadFromFileBM(bmToolbar, DataDir + 'toolbar.png', clForm);
+  { #todo 1 -oiso4free : change to BGRABitmap }
+  //pngLoadFromFileBM(bmToolbar, DataDir + 'toolbar.png', clForm);
   bmMiscGlyphs := TBitmap32.Create;
-  pngLoadFromFile(bmMiscGlyphs, DataDir + 'misc.png');
+  //pngLoadFromFile(bmMiscGlyphs, DataDir + 'misc.png');
   bmToolSettings := TBitmap.Create;
-  pngLoadFromFileBM(bmToolSettings, DataDir + 'toolset.png', clForm);
+  //pngLoadFromFileBM(bmToolSettings, DataDir + 'toolset.png', clForm);
   bmBrushShape := TBitmap32.Create;
-  pngLoadFromFile(bmBrushShape, DataDir + 'brushshape.png');
+  //pngLoadFromFile(bmBrushShape, DataDir + 'brushshape.png');
   bmPattern := TBitmap32.Create;
-  pngLoadFromFile(bmPattern, DataDir + 'pattern.png');
+  //pngLoadFromFile(bmPattern, DataDir + 'pattern.png');
   bmEye := TBitmap32.Create;
-  pngLoadFromFile(bmEye, DataDir + 'eye.png');
+  //pngLoadFromFile(bmEye, DataDir + 'eye.png');
 finalization
   FreeAndNil(bmEye);
   FreeAndNil(bmPattern);

@@ -93,8 +93,10 @@ begin
     // does it contain raw PNG data?
     i := Integer(s.ReadDWord);
     s.Seek(-4, soFromCurrent);
-    if i shr 8 = PNG_Signature then
-      Result := pngLoadFromStream(bm, s, dpi) else
+    { #todo 1 -oiso4free : change to BGRABitmap }
+    //if i shr 8 = PNG_Signature then
+
+      //Result := pngLoadFromStream(bm, s, dpi) else
       Result := dibRead(bm, s, -1, True) and (bm.Width <> 0) and (bm.Height <> 0);
 
     // restore stream position
@@ -140,9 +142,11 @@ begin
     end;
 
     // write data
-    if PNGCompress then
+    { #todo 1 -oiso4free : change to BGRABitmap }
+    {if PNGCompress then
     // write as PNG
-      pngSaveToStream(bm, s, PNG_COMPRESSION_HIGH, 0.0) else
+    { #todo 1 -oiso4free : change to BGRABitmap }
+     // pngSaveToStream(bm, s, PNG_COMPRESSION_HIGH, 0.0) else }
       dibWrite(bm, s, True, PixelFormat, Palette, nil);
   finally
     Palette.Free;

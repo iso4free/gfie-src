@@ -86,7 +86,11 @@
 		<Unit filename="imgformats.cpp">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="imgformats.h" />
+		<Unit filename="imgformats.h">
+			<Option compilerVar="g++" />
+			<Option compile="1" />
+			<Option link="1" />
+		</Unit>
 		<Unit filename="libpng/png.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -276,10 +280,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="zlib/zutil.h" />
-		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

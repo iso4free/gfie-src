@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <Name Value="gfcomp"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)/"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Files>
+      <Item>
+        <Filename Value="Accordion.lrs"/>
+        <Type Value="LRS"/>
+      </Item>
+      <Item>
+        <Filename Value="Accordion.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="Accordion"/>
+      </Item>
+      <Item>
+        <Filename Value="AdjustControl.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="AdjustControl"/>
+      </Item>
+      <Item>
+        <Filename Value="ColorSwatches.lrs"/>
+        <Type Value="LRS"/>
+      </Item>
+      <Item>
+        <Filename Value="ColorSwatches.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ColorSwatches"/>
+      </Item>
+      <Item>
+        <Filename Value="ColSpaces.pas"/>
+        <UnitName Value="ColSpaces"/>
+      </Item>
+      <Item>
+        <Filename Value="DoubleBufPB.lrs"/>
+        <Type Value="LRS"/>
+      </Item>
+      <Item>
+        <Filename Value="DoubleBufPB.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="DoubleBufPB"/>
+      </Item>
+      <Item>
+        <Filename Value="FastDiv.pas"/>
+        <UnitName Value="FastDiv"/>
+      </Item>
+      <Item>
+        <Filename Value="gfListBox.lrs"/>
+        <Type Value="LRS"/>
+      </Item>
+      <Item>
+        <Filename Value="gfListBox.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="gfListBox"/>
+      </Item>
+      <Item>
+        <Filename Value="HSBMap.lrs"/>
+        <Type Value="LRS"/>
+      </Item>
+      <Item>
+        <Filename Value="HSBMap.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="HSBMap"/>
+      </Item>
+      <Item>
+        <Filename Value="ImageAnchors.lrs"/>
+        <Type Value="LRS"/>
+      </Item>
+      <Item>
+        <Filename Value="ImageAnchors.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ImageAnchors"/>
+      </Item>
+      <Item>
+        <Filename Value="NumberEdit.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="NumberEdit"/>
+      </Item>
+      <Item>
+        <Filename Value="PaintScrollBar.lrs"/>
+        <Type Value="LRS"/>
+      </Item>
+      <Item>
+        <Filename Value="PaintScrollBar.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="PaintScrollBar"/>
+      </Item>
+    </Files>
+    <RequiredPkgs>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

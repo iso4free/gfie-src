@@ -26,7 +26,7 @@ uses
   BitmapEx, bmExUtils, Layers, DocClass, UndoObject, ieShared, Buttons,
   dlgDocPage, Menus, Clipbrd, ImageTransform, Filters, PixelFormats,
   gfMath, LangPack, BMP, PNG, ICNS, StrUtils, gfListBox,
-  BlendModes, dlgLib, dlgStartupFrame, dlgDebug;
+  BlendModes, dlgLib, dlgStartupFrame, dlgDebug, LazUTF8;
 
 const
   MaxShrink = 8;
@@ -2201,11 +2201,11 @@ begin
       finally
         bm.Free;
       end;
-
+       { #todo 1 -oiso4free : change to BGRABitmap }
       // PNG
-      st.Size := 0;
+     { st.Size := 0;
       pngSaveToStream(lsWrite.Selection.Image, st, PNG_COMPRESSION_NORMAL, 0.0);
-      Clipboard.AddFormat(CF_PNG, st);
+      Clipboard.AddFormat(CF_PNG, st);   }
 
       // Inversion mask
       with lsWrite.Selection.Image do
@@ -2273,7 +2273,8 @@ begin
         st.Size := 0;
         Clipboard.GetFormat(IfThen(Clipboard.HasFormat(CF_PNG), CF_PNG, CF_PNG_2), st);
         st.Position := 0;
-        pngLoadFromStream(bx, st, dpi);
+        { #todo 1 -oiso4free : change to BGRABitmap }
+        //pngLoadFromStream(bx, st, dpi);
       end
       else
       begin
@@ -2401,8 +2402,8 @@ begin
           begin
             Left := GetVisibleRect.Left;
             Top := GetVisibleRect.Top;
-            Right := Left + Size.X;
-            Bottom := Top + Size.Y;
+            Right := Left + Size.cx;
+            Bottom := Top + Size.cy;
           end;
           Angle := AAngle;
           Depth := Max(0, ls.FirstSelected);

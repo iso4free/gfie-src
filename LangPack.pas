@@ -20,7 +20,7 @@ unit LangPack;
 interface
 
 uses
-  LclIntf, LclType, FileUtil,
+  LclIntf, LclType, FileUtil, LazUTF8,
   SysUtils, Classes, PixelFormats, DocClass, ieShared, Forms, Controls, Dialogs,
   dlgDebug;
 

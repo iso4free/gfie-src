@@ -136,7 +136,8 @@ begin
 
   bx := TBitmap32.Create;
   try
-    pngLoadFromFile(bx, DataDir + 'startup.png');
+    { #todo 1 -oiso4free : change to BGRABitmap }
+    //pngLoadFromFile(bx, DataDir + 'startup.png');
     // normal state
     bx.ToBitmap(bmIcons, clForm);
     // rollover state

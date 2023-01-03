@@ -24,9 +24,9 @@ uses
   FileUtil, SynMemo, SynHighlighterPas, SynCompletion, Dialogs, ExtCtrls, Menus,
   StdCtrls, Accordion, uPSComponent, uPSComponent_Default, uPSComponent_Forms,
   uPSComponent_Controls, uPSComponent_StdCtrls, uPSCompiler, uPSRuntime,
-  uPSComponent_COM, uPSComponent_DB, types, uPSI_AllMySources,
-  uPSI_Dialogs, uPSI_ExtCtrls, uPSR_graphics, uPSC_graphics,
-  uPSI_ComCtrls, Math, uPSI_PSImportGenerics;
+  uPSComponent_COM, uPSComponent_DB, types, {uPSI_AllMySources,
+  uPSI_Dialogs, uPSI_ExtCtrls,} uPSR_graphics, uPSC_graphics,
+  {uPSI_ComCtrls,} Math{, uPSI_PSImportGenerics}, LazUTF8;
 
 type
 
@@ -218,12 +218,12 @@ begin
   TPSPluginItem(PSScript1.Plugins.Add).Plugin := TPSImport_DB.Create(self);
   TPSPluginItem(PSScript1.Plugins.Add).Plugin := TPSImport_Forms.Create(self);
   TPSPluginItem(PSScript1.Plugins.Add).Plugin := TPSImport_StdCtrls.Create(self);
-  TPSPluginItem(PSScript1.Plugins.Add).Plugin := TPSImport_Dialogs.Create(self);
-  TPSPluginItem(PSScript1.Plugins.Add).Plugin := TPSImport_ExtCtrls.Create(self);
-  TPSPluginItem(PSScript1.Plugins.Add).Plugin := TPSImport_ComCtrls.Create(self);
-  TPSPluginItem(PSScript1.Plugins.Add).Plugin := TPSImport_ComObj.Create(self);
-  PSImportAllMySources(PSScript1);
-  TPSPluginItem(PSScript1.Plugins.Add).Plugin := TPSImport_PSImportGenerics.Create(self);
+  //TPSPluginItem(PSScript1.Plugins.Add).Plugin := TPSImport_Dialogs.Create(self);
+  //TPSPluginItem(PSScript1.Plugins.Add).Plugin := TPSImport_ExtCtrls.Create(self);
+  //TPSPluginItem(PSScript1.Plugins.Add).Plugin := TPSImport_ComCtrls.Create(self);
+  //TPSPluginItem(PSScript1.Plugins.Add).Plugin := TPSImport_ComObj.Create(self);
+  //PSImportAllMySources(PSScript1);
+  //TPSPluginItem(PSScript1.Plugins.Add).Plugin := TPSImport_PSImportGenerics.Create(self);
 
   ApplyLanguagePack;
 end;

@@ -23,7 +23,7 @@ uses
   LclIntf, LclType,
   SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, ExtCtrls, NumberEdit, AdjustControl, dlgDoc, BitmapEx,
-  Printers, DocClass, PixelFormats, LangPack, PrintersDlgs, FileUtil;
+  Printers, DocClass, PixelFormats, LangPack, PrintersDlgs, FileUtil, LazUTF8;
 
 type
 

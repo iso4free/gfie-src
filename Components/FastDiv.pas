@@ -30,10 +30,10 @@ interface
 
 {$ifdef WINDOWS} // TODO Linux ABI?
 {$ifdef CPU386}
-{$define ASM32}
+{ $define ASM32}
 {$endif}
 {$ifdef CPUX86_64}
-{$define ASM64}
+{ $define ASM64}
 {$endif}
 {$endif}
 

@@ -24,7 +24,7 @@ uses
   SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, DoubleBufPB, ColorSwatches, StdCtrls, PaintScrollBar,
   AdjustControl, NumberEdit, ExtCtrls, BitmapEx, bmExUtils, ComCtrls, Buttons,
-  Menus, ieShared, HSBMap, Math, FileUtil, gfMath;
+  Menus, ieShared, HSBMap, Math, FileUtil, gfMath, LazUTF8;
 
 const
   cl32NoPreview = $00123456; // special color value

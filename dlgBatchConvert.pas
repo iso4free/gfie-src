@@ -23,7 +23,7 @@ uses
   LclIntf, LclType,
   SysUtils, Variants, Classes, Graphics, Controls, Forms, FileUtil,
   Dialogs, StdCtrls, DocClass, dlgCreateIcon, LangPack, PixelFormats,
-  ieShared, ComCtrls, ShellEx, BitmapEx, dlgDebug;
+  ieShared, ComCtrls, ShellEx, BitmapEx, dlgDebug, LazFileUtils, LazUTF8;
 
 type
 

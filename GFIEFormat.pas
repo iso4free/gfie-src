@@ -32,7 +32,7 @@ procedure gfieSaveToStream(Doc: TIconDoc; s: TStream; compressed: boolean);
 implementation
 
 uses
-  Math, StrUtils, BitmapEx, bmExUtils, Layers, BlendModes, gfDataTree, BMP, PNG, ieShared;
+  Math, StrUtils, BitmapEx, bmExUtils, Layers, BlendModes, gfDataTree, BMP, {PNG,} ieShared;
 
 // Converting enums to string
 
@@ -116,7 +116,8 @@ var
       if fmt = 'BMP' then
         bmpLoadFromStream(bm, sMem) else
       if fmt = 'PNG' then
-        pngLoadFromStream(bm, sMem, dpi);
+        { #todo 1 -oiso4free : Change to BGRABitmap }
+       //pngLoadFromStream(bm, sMem, dpi);
 
       bm.Resize(Min(bm.Width, MaxWidth), Min(bm.Height, MaxHeight));
     finally
@@ -315,7 +316,8 @@ var
     sMem := TMemoryStream.Create;
     try
       if compressed then
-        pngSaveToStream(bm, sMem, PNG_COMPRESSION_HIGH, 0.0)
+       { #todo 1 -oiso4free : Change to BGRABitmap }
+      //pngSaveToStream(bm, sMem, PNG_COMPRESSION_HIGH, 0.0)
       else
         bmpSaveToStream(bm, sMem);
 

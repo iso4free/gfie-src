@@ -55,7 +55,7 @@ function XYZtoRGB(x, y, z: integer): TInt3;
 
 implementation
 
-function Int3toColor;
+function Int3toColor(const i: TInt3): TColor;
 begin
   Result := i[0] + (i[1] shl 8) + (i[2] shl 16);
 end;
@@ -81,7 +81,7 @@ begin
   Result := Integer(DivBy85(Cardinal(x)));
 end;
 
-function RGBtoHSB;
+function RGBtoHSB(r, g, b: integer): TInt3;
 var
   cMax, cMin, Rdelta, Gdelta, Bdelta: integer;
   i: integer;
@@ -135,7 +135,7 @@ begin
     Result := n1;
 end;
 
-function HSBtoRGB;
+function HSBtoRGB(Hue, Sat, Bri: integer): TInt3;
 var
   n1, n2: integer;
 
@@ -159,7 +159,7 @@ begin
   end;
 end;
 
-function RGBtoXYZ;
+function RGBtoXYZ(r, g, b: integer): TInt3;
 const
   OneDivRGBMAX = 1 / RGBMAX;
 var
@@ -182,7 +182,7 @@ begin
   Result[2] := Round((q[0] * 0.0193 + q[1] * 0.1192 + q[2] * 0.9505) * XYZMAX);
 end;
 
-function XYZtoRGB;
+function XYZtoRGB(x, y, z: integer): TInt3;
 const
   OneDivXYZMAX = 1 / XYZMAX;
 var

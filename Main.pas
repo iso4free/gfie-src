@@ -28,7 +28,7 @@ uses
   DocClass, ieShared, dlgDoc, dlgLib, ImageTransform, ShellEx, Math, LangPack,
   Layers, UndoObject, dlgToolbar, dlgLayers, dlgColor, dlgToolSet, DoubleBufPB,
   Accordion, bmExUtils, NumberEdit, dlgDebug, dlgCreateMacIcon, IniFiles,
-  ResList, PNG, BitmapEx, Clipbrd, Process, StrUtils;
+  ResList, PNG, BitmapEx, Clipbrd, Process, StrUtils, LazUTF8;
 
 const
   nRecentFiles = 16;
@@ -1438,7 +1438,8 @@ begin
           bm := TBitmap32.Create;
           try
             bm.Assign(Doc.Pages[i].Layers);
-            pngSaveToFile(bm, fn, PNG_COMPRESSION_HIGH);
+            { #todo 1 -oiso4free : change to BGRABitmap }
+            //pngSaveToFile(bm, fn, PNG_COMPRESSION_HIGH);
           finally
             bm.Free;
           end;

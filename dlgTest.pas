@@ -23,7 +23,7 @@ uses
   LclIntf, LclType, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, DoubleBufPB, dlgDoc, DocClass, ExtCtrls, bmExUtils,
   BitmapEx, Buttons, ComCtrls, ieShared, Math, FileUtil, OpenGLContext, Layers,
-  dlgDebug, Utils3d, gl, glu, glext, types, NinePatch, WSControls, WSLCLClasses;
+  dlgDebug, Utils3d, gl, glu, glext, types, NinePatch, WSControls, WSLCLClasses, LazUTF8;
 
 type
   TCustomOpenGLControl_fixed = class(TCustomOpenGLControl)

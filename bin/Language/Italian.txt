@@ -1,0 +1,1199 @@
+_meta.author = Maurizio Peroni, Massimo Manca, Francesco (update 2022-08)
+_meta.for = Greenfish Icon Editor Pro
+_meta.howToTranslate = Strings that need translation are marked with TODO. See http://greenfishsoftware.org/translate.php for information on how to submit your contribution.
+_meta.language = Italiano
+
+button.abort = TODO Abort
+button.add = Aggiungi
+button.all = Tutti
+button.cancel = Annulla
+button.clear = Cancella
+button.close = Chiudi
+button.compile = Compila
+button.create = TODO Create
+button.delete = TODO Delete
+button.edit = TODO Edit
+button.help = Guida
+button.ignore = TODO Ignore
+button.no = No
+button.none = Nessuno
+button.ok = OK
+button.overwrite = TODO Overwrite
+button.pageSetup = TODO Page setup
+button.preview = Anteprima
+button.print = Stampa
+button.printerSetup = Configura la stampante
+button.remove = Elimina
+button.removeAll = TODO Remove all
+button.reset = Reimposta
+button.save = TODO Save
+button.search = TODO Search
+button.skip = TODO Skip
+button.useAnotherName = TODO Rename
+button.yes = Sì
+
+dialog.batchConvert.addFiles = TODO Add files
+dialog.batchConvert.addFolder = TODO Add folder
+dialog.batchConvert.canceled = TODO Canceled
+dialog.batchConvert.completed = TODO Completed!
+dialog.batchConvert.exportAllFrames = TODO Export all frames
+dialog.batchConvert.exportAllFramesTip = TODO If not checked, then only the first frame of each page will be converted.
+dialog.batchConvert.exportAllPages = TODO Export all pages
+dialog.batchConvert.exportAllPagesTip = TODO If not checked, then only the first page of each file will be converted.
+dialog.batchConvert.folder = Cartella di destinazione
+dialog.batchConvert.format = Converti in
+dialog.batchConvert.formatOptions = TODO Options
+dialog.batchConvert.ignoreSameType = TODO Skip input files with same type as output
+dialog.batchConvert.input = TODO Input
+dialog.batchConvert.inputFilesAndFolders = TODO Input files and folders
+dialog.batchConvert.keepMetadata = TODO Keep metadata
+dialog.batchConvert.keepMetadataTip = TODO If not checked, then all metadata such as Exif will be removed from resulting files.
+dialog.batchConvert.moveInputFilesToTrash = TODO Move processed input files to trash
+dialog.batchConvert.nProcessedFailedTotal = TODO {nProcessed} files processed, {nFailed} failed.
+dialog.batchConvert.nProcessedTotal = TODO {nProcessed} files processed.
+dialog.batchConvert.open = Apri file convertiti in Greenfish Icon Editor Pro
+dialog.batchConvert.openOutputFolder = TODO Open output folder
+dialog.batchConvert.output = TODO Output
+dialog.batchConvert.processing = TODO Processing
+dialog.batchConvert.sameAsInputFolder = TODO Same as input
+dialog.batchConvert.scanning = TODO Scanning
+dialog.batchConvert.settings = Opzioni
+dialog.batchConvert.showLog = TODO Show log
+dialog.batchConvert.svgOpenOptions = TODO SVG open options
+
+dialog.cellGrid.enabled = Attivo
+dialog.cellGrid.offset = Spostamento
+dialog.cellGrid.size = Dimensioni della cella
+dialog.cellGrid.spacing = Distanziamento
+
+dialog.colorPicker.advanced = TODO Advanced
+dialog.colorPicker.alpha = Canale Alfa (opacità)
+dialog.colorPicker.backColor = Colore di sfondo
+dialog.colorPicker.basic = TODO Basic
+dialog.colorPicker.blue = Canale blu
+dialog.colorPicker.default = Reimposta i colori originali
+dialog.colorPicker.foreColor = Colore di primo piano
+dialog.colorPicker.green = Canale verde
+dialog.colorPicker.gridSize = TODO Grid size
+dialog.colorPicker.gridSizeTemplate = TODO {width}x{height} ({area} colors)
+dialog.colorPicker.html = Codice HTML
+dialog.colorPicker.inverted = Invertito
+dialog.colorPicker.pickFromScreen = TODO Pick from screen
+dialog.colorPicker.red = Canale rosso
+dialog.colorPicker.storeColor = TODO Store active color here
+dialog.colorPicker.swapColors = Scambia i due colori
+dialog.colorPicker.swatchLoad = Apri raccolta campioni
+dialog.colorPicker.swatchSave = Salva raccolta campioni
+dialog.colorPicker.toggleChooser = Alterna mappa HSB e campioni di colore
+dialog.colorPicker.transparent = Trasparente
+dialog.colorPicker.wcp = Colori di Windows
+
+dialog.convolve.bias = TODO Bias
+dialog.convolve.kernel = TODO Kernel
+dialog.convolve.padding = TODO Padding
+dialog.convolve.preset = TODO Preset
+
+dialog.createAndroidDrawable.createDpi = Crea versione {}
+dialog.createAndroidDrawable.currentDpi = DPI corrente
+dialog.createAndroidDrawable.errorEmptyId = Inserisci un identificatore di risorse.
+dialog.createAndroidDrawable.errorEmptyResourceFolder = TODO Please enter a resource folder path where the drawable-* subdirectories can be found.
+dialog.createAndroidDrawable.errorNoResolutions = Seleziona almeno una risoluzione.
+dialog.createAndroidDrawable.errorRelativeResourceFolder = TODO The resource folder path must be an absolute path.
+dialog.createAndroidDrawable.id = Identificatore risorse Android
+dialog.createAndroidDrawable.idTip = TODO Output filename for the exported drawable
+dialog.createAndroidDrawable.resolutions = Risoluzioni da creare
+dialog.createAndroidDrawable.resourceFolder = TODO Android project resource folder
+dialog.createAndroidDrawable.resourceFolderTip = TODO The folder where the drawable-* subdirectories can be found
+
+dialog.createIcon.padToKeepAspectRatio = TODO Pad with transparency to keep aspect ratio
+dialog.createIcon.selectFormats = Seleziona i formati da creare
+
+dialog.formulae.helpText = Variabili/costanti disponibili: {vars}<br>Operazioni disponibili: {ops}<br>Espressione di esempio: {example}
+dialog.formulae.rgbaRange = TODO RGBA range
+
+dialog.frameProperties.disposalMethod = TODO GIF disposal method
+dialog.frameProperties.duration = TODO Duration
+
+dialog.htmlBrowser.back = TODO Back
+dialog.htmlBrowser.forward = TODO Forward
+dialog.htmlBrowser.home = TODO Home
+dialog.htmlBrowser.loading = TODO Loading
+dialog.htmlBrowser.nextMatch = TODO Next match
+dialog.htmlBrowser.prevMatch = TODO Previous match
+
+dialog.iclFormat.title = Selezionare il formato ICL
+
+dialog.iconEditor.frameList.duration_ms = TODO duration: {} ms
+dialog.iconEditor.frameList.itemStatusTip = TODO Frame {index} of {total}
+dialog.iconEditor.frameList.statusTip = TODO List of frames
+
+dialog.iconEditor.layerList.itemStatusTip = TODO "{name}": layer {index} of {total}, {visibility}, opacity: {opacity}, blend mode: {blendMode}
+dialog.iconEditor.layerList.statusTip = TODO List of layers
+
+dialog.iconEditor.nodes = {} nodi
+
+dialog.iconEditor.pageList.dpi = {} DPI
+dialog.iconEditor.pageList.itemStatusTip = Pagina {index} di {total}, dimensioni: {width} x {height} pixel
+dialog.iconEditor.pageList.statusTip = Elenco pagine o formati d'icona
+
+dialog.iconEditor.togglePages = Nascondi/mostra elenco pagine
+dialog.iconEditor.zoomMenu = Ingrandimento
+
+dialog.insertText.alignCenter = TODO Center
+dialog.insertText.alignJustify = TODO Justify
+dialog.insertText.alignLeft = TODO Left
+dialog.insertText.alignRight = TODO Right
+dialog.insertText.bold = Grassetto
+dialog.insertText.bullets = TODO Bullets
+dialog.insertText.editText = TODO Edit text
+dialog.insertText.face = Carattere
+dialog.insertText.insertText = TODO Insert text
+dialog.insertText.italic = Corsivo
+dialog.insertText.moreOptions = TODO More options
+dialog.insertText.mustWrap = TODO Cannot disable word wrap because text has centered or right-aligned paragraphs.
+dialog.insertText.numbering = TODO Numbering
+dialog.insertText.strikeOut = TODO Strike out
+dialog.insertText.subscript = TODO Subscript
+dialog.insertText.superscript = TODO Superscript
+dialog.insertText.underline = Sottolineato
+dialog.insertText.wordWrap = TODO Word wrap
+
+dialog.layerProperties.blendMode = Modalità di fusione
+dialog.layerProperties.name = Nome
+dialog.layerProperties.visible = Visibile
+
+dialog.libraryEditor.folder = Scegliere una cartella per i files estratti
+
+dialog.libraryEditor.resourceList.statusTip = TODO Library editor
+
+dialog.logViewer.title = TODO Log
+
+dialog.metadata.author = Autore
+dialog.metadata.clearAniMetadata = TODO Clear ANI metadata
+dialog.metadata.clearExif = TODO Clear Exif for page #{index}
+dialog.metadata.clearPngMetadata = TODO Clear PNG metadata
+dialog.metadata.comments = Commenti
+dialog.metadata.copyright = Diritti d'autore
+dialog.metadata.creationTime = TODO Creation time
+dialog.metadata.description = TODO Description
+dialog.metadata.disclaimer = TODO Disclaimer
+dialog.metadata.exifSupport = TODO Full Exif support: {fullFileTypes}. Partial support: {partialFileTypes}. Only DPI is supported: {dpiFileTypes}.
+dialog.metadata.loopCount = Nr. di cicli (0 = infinito)
+dialog.metadata.page = TODO Page
+dialog.metadata.pageWithIndex = TODO Page #{index}
+dialog.metadata.sourceDevice = TODO Source device
+dialog.metadata.title = Titolo
+dialog.metadata.type = Dei files {}
+dialog.metadata.warning = TODO Warning
+
+dialog.morph.kernelShape = TODO Kernel shape
+
+dialog.notifications.caption = TODO Notifications
+
+dialog.pageProperties.captionNewPage = Nuova pagina
+dialog.pageProperties.captionPageProp = Proprietà pagina
+dialog.pageProperties.colorDepth = TODO Color depth
+
+dialog.pageProperties.colorDepth.automatic = TODO Automatic
+
+dialog.pageProperties.createFromSelected = Crea icona usando la pagina selezionata
+dialog.pageProperties.crop = Ritaglia
+dialog.pageProperties.customSize = Formato personalizzato
+dialog.pageProperties.ditherMethod = TODO Dither method
+dialog.pageProperties.dpi = DPI pagine (0 = DPI del documento)
+dialog.pageProperties.imageAnchors = Ancore dell'immagine
+dialog.pageProperties.other = Altro
+dialog.pageProperties.retinaHint = TODO Specifies that this ICNS page was optimized for Retina displays
+
+dialog.pageProperties.size.apple = Formato Apple
+dialog.pageProperties.size.huge = enorme
+dialog.pageProperties.size.large = grande
+dialog.pageProperties.size.medium = media
+dialog.pageProperties.size.small = piccola
+dialog.pageProperties.size.smallest = minima
+dialog.pageProperties.size.toolbar = barra degli strumenti
+
+dialog.pageProperties.sizeAndColor = TODO Size and color
+dialog.pageProperties.square = Proporzioni fisse
+dialog.pageProperties.stretch = Allunga
+dialog.pageProperties.whenResizing = Quando si ridimensiona
+
+dialog.preferences.animateNotifications = TODO Animate notifications
+dialog.preferences.brushCursorEnabled = TODO Enable brush cursor
+dialog.preferences.cellGridColors = TODO Cell grid colors
+dialog.preferences.centerLinesColors = TODO Center lines colors
+dialog.preferences.dvm = Aspetto dei dialoghi Apri/Salva
+dialog.preferences.editableSelectionOutlineColors = TODO Editable selection outline colors
+dialog.preferences.editorBackgroundColor = TODO Editor background color
+dialog.preferences.fileAssoc = Associazioni ai tipi di files
+
+dialog.preferences.fileAssoc.howTo.preamble = TODO Newer Windows versions do not support apps setting file associations by themselves. To associate/unassociate file types with Greenfish Icon Editor Pro:
+dialog.preferences.fileAssoc.howTo.win10 = TODO <ul><li>Open <em>Settings</em>.</li><li>Search for <em>Default Apps</em>.</li><li>Scroll down and choose <em>Set defaults by app</em>.</li><li>Select <em>Greenfish Icon Editor Pro</em>.</li><li>Set file associations one by one.</li></ul>
+dialog.preferences.fileAssoc.howTo.win11 = TODO <ul><li>Open <em>Settings</em>.</li><li>Select <em>Apps</em> in the left pane.</li><li>Select <em>Default apps</em> in the right pane.</li><li>Click on <em>Greenfish Icon Editor Pro</em>.</li><li>Set file associations one by one.</li></ul>
+dialog.preferences.fileAssoc.howTo.win7_and_8 = TODO <ul><li>Open <em>Control Panel</em>.</li><li>Click on <em>Programs</em> (category view) or <em>Default Programs</em> (icons view).</li><li>Choose <em>Set your default programs</em>.</li><li>Select <em>Greenfish Icon Editor Pro</em>.</li><li>Choose either <em>Set this program as default</em> or <em>Choose defaults for this program</em>.</li></ul>
+
+dialog.preferences.floatingSelectionOutlineColors = TODO Floating selection outline colors
+dialog.preferences.floatingSelectionResizeKnobColor = TODO Floating selection resize knob color
+dialog.preferences.floatingSelectionRotateKnobColor = TODO Floating selection rotate knob color
+dialog.preferences.gammaCorrect = TODO Gamma-correct rendering
+dialog.preferences.hatchAdjustToGrid = TODO Adjust transparency checkerboard to pixel grid
+dialog.preferences.hatchBlockSize = TODO Transparency checkerboard block size
+dialog.preferences.hatchColors = TODO Transparency checkerboard colors
+dialog.preferences.hatchDrawUnderLayerThumbnail = TODO Draw transparency checkerboard under layer thumbnails
+dialog.preferences.imageFrameFocusedColor = TODO Focused image frame color
+dialog.preferences.imageFrameUnfocusedColor = TODO Unfocused image frame color
+dialog.preferences.misc = Varie
+dialog.preferences.mwa = Azione rotellina del mouse
+dialog.preferences.newSelectionMaskOutlineColors = TODO New selection mask outline colors
+dialog.preferences.notificationSound = TODO Play sound when displaying a notification
+dialog.preferences.pixelGridColors = TODO Pixel grid colors
+dialog.preferences.pixelGridMinZoom = TODO Pixel grid min. zoom
+dialog.preferences.requireDraggingToSelect = TODO Select rectangle/Select ellipse/Lasso: deselect all if clicking without dragging
+dialog.preferences.saveToolSettings = Salva le configurazioni degli strumenti tra sessioni successive
+dialog.preferences.selectionOutlineSegmentSize = TODO Selection outline segment size
+dialog.preferences.shapeKnobInnerColor = TODO Shape knob inner color
+dialog.preferences.shapeKnobOuterColor = TODO Shape knob outer color
+
+dialog.print.allPages = Tutte le pagine
+dialog.print.caption = Titolo
+dialog.print.copies = Copie
+dialog.print.range = TODO Range
+dialog.print.zoom = Ingrandimento (%)
+
+dialog.resourceProperties.langCustom = ID lingua speciale
+dialog.resourceProperties.langNeutral = Lingua neutrale
+dialog.resourceProperties.language = Lingua
+dialog.resourceProperties.name = Nome
+dialog.resourceProperties.type = Tipo
+
+dialog.saveOptions.lossless = Senza perdite
+dialog.saveOptions.psnrHint = TODO Peak signal-to-noise ratio
+dialog.saveOptions.quality = Qualità
+dialog.saveOptions.targaCompression = TODO Targa compression
+dialog.saveOptions.tiffCompression = TODO TIFF compression
+dialog.saveOptions.title = Opzioni di salvataggio
+dialog.saveOptions.uncompressed = TODO Uncompressed
+dialog.saveOptions.xpmId = TODO XPM Id
+
+dialog.scripting.compileFailed = Compilazione fallita!
+dialog.scripting.compiled = Script compilato con successo!
+dialog.scripting.compilingScript = Compilazione dello script ...
+dialog.scripting.console = Console
+dialog.scripting.running = In esecuzione
+dialog.scripting.runningScript = Script in esecuzione ...
+dialog.scripting.terminated = Script terminato.
+dialog.scripting.title = GFIE Scripting
+dialog.scripting.warning = Gli script possono causare un arresto anomalo di GFIE, accedere al disco rigido, accedere a Internet e fare molto di più, causando potenziali dati e perdite sulla privacy. Eseguendo gli script dichiarate di essere responsabili per eventuali danni che questi script possono causare a te o ad altri.
+
+dialog.svgOpenOptions.defaultSize = Dimensione predefinita: {}
+dialog.svgOpenOptions.sizesToRender = TODO Sizes to render
+dialog.svgOpenOptions.svgOptions = Opzioni SVG
+dialog.svgOpenOptions.svgSize = TODO SVG size
+dialog.svgOpenOptions.unspecified = TODO Unspecified
+
+dialog.test.9patch = 9-patch (pulsante Android)
+dialog.test.bgrDefault = Applica lo sfondo predefinito
+dialog.test.bgrLoad = Apri uno sfondo
+dialog.test.clearScribble = TODO Clear scribble
+dialog.test.cursor = Cursore
+dialog.test.lighting = Illuminazione
+dialog.test.moveOverImage = Muovi il cursore sopra l'immagine
+dialog.test.not9patch = Questa immagine non può essere interpretata come un'immagine 9-patch.
+dialog.test.objLoad = Carica oggetto 3D
+dialog.test.redraw9patch = TODO Redraw 9-patch test image
+dialog.test.texture3d = Trama 3D
+dialog.test.textureMultiplier = Moltiplicatore di trama
+
+dialog.toolBehaviour.brushShape = Forma del pennello
+dialog.toolBehaviour.brushSize = Dimensioni del pennello
+dialog.toolBehaviour.contiguous = Continuo
+dialog.toolBehaviour.dither = TODO Dither
+dialog.toolBehaviour.eraserStrength = Pressione gomma
+dialog.toolBehaviour.eyedropperBack = Il contagocce riattiva lo strumento precedente
+dialog.toolBehaviour.gConical = Gradiente conico
+dialog.toolBehaviour.gLinear = Gradiente lineare
+dialog.toolBehaviour.gRadial = Gradiente radiale
+dialog.toolBehaviour.gSpiral = Gradiente a spirale
+dialog.toolBehaviour.gradientRepetition = TODO Repetition
+dialog.toolBehaviour.gradientShape = TODO Shape
+dialog.toolBehaviour.interpolation = TODO Interpolation
+dialog.toolBehaviour.lineWidth = Larghezza linea
+dialog.toolBehaviour.modeColor = Modo colore
+dialog.toolBehaviour.modeTransparency = Modo trasparenza
+dialog.toolBehaviour.pattern = Modello
+dialog.toolBehaviour.perspectiveMove = TODO 3d move
+dialog.toolBehaviour.repAsym = Ripetizione asimmetrico
+dialog.toolBehaviour.repNone = Senza ripetizione
+dialog.toolBehaviour.repSym = Ripetizione simmetrico
+dialog.toolBehaviour.retouchMode = Modalità di ritocco
+dialog.toolBehaviour.sampleAllLayers = Campiona tutti i livelli
+dialog.toolBehaviour.shapeFilled = Ombre piene
+dialog.toolBehaviour.shapeFramed = Ombre a cornice
+dialog.toolBehaviour.shapeFramedAndFilled = TODO Outline and fill
+dialog.toolBehaviour.shapeStyle = TODO Shape style
+dialog.toolBehaviour.sprayRate = TODO Spray rate
+dialog.toolBehaviour.tolerance = Tolleranza Bacchetta/Ricolora/Secchio
+
+dialog.transformSelection.pitch = TODO Pitch
+dialog.transformSelection.pitchHint = TODO Elevation, in degrees. Default: 0
+dialog.transformSelection.pixels = pixel
+dialog.transformSelection.rectify = TODO Rectify
+dialog.transformSelection.roll = TODO Roll
+dialog.transformSelection.rollHint = TODO 2D rotation angle, in degrees. Default: 0
+dialog.transformSelection.rotateDistort = TODO Rotate and distort
+dialog.transformSelection.yaw = TODO Yaw
+dialog.transformSelection.yawHint = TODO Horizontal panning, in degrees. Default: 0
+dialog.transformSelection.zFlip = TODO Z flip
+dialog.transformSelection.zFlipHint = TODO Negate element (2,0) in the transformation matrix.
+dialog.transformSelection.zPlane = TODO Distance
+dialog.transformSelection.zPlaneHint = TODO Z distance of object from camera
+
+enum.blendMode.behind = Dietro
+enum.blendMode.colorBurn = Colore bruciato
+enum.blendMode.colorDodge = Colore schermo
+enum.blendMode.darken = Scurire
+enum.blendMode.darkerColor = Colore più scuro
+enum.blendMode.difference = Differenza
+enum.blendMode.dissolve = Dissolvenza
+enum.blendMode.exclusion = Esclusione
+enum.blendMode.hardLight = Luce intensa
+enum.blendMode.hardMix = Sovrapposizione intensa
+enum.blendMode.hue = Tinta
+enum.blendMode.hueShift = Tonalità
+enum.blendMode.lighten = Schiarire
+enum.blendMode.lighterColor = Colore più chiaro
+enum.blendMode.linearBurn = Bruciato lineare
+enum.blendMode.linearDodge = Schermo lineare (aggiunge)
+enum.blendMode.linearLight = Luce lineare
+enum.blendMode.mask = Maschera
+enum.blendMode.multiply = Moltiplicazione
+enum.blendMode.normal = Normale
+enum.blendMode.overlay = Sovrapposizione
+enum.blendMode.pinLight = Luce puntiforme
+enum.blendMode.sat = Saturazione
+enum.blendMode.screen = Decolora
+enum.blendMode.softLight = Luce soffusa
+enum.blendMode.vividLight = Luce vivida
+
+enum.borderMode.ignore = TODO None
+enum.borderMode.toric = TODO Toric
+enum.borderMode.zero = TODO Transparent
+
+enum.brushShape.backslash = Diagonale \
+enum.brushShape.horiz = Orizzontale
+enum.brushShape.rounded = Rotondo
+enum.brushShape.slash = Diagonale /
+enum.brushShape.spray = Spruzzi
+enum.brushShape.square = Quadrato
+enum.brushShape.vert = Verticale
+
+enum.convolvePadding.replicate = TODO Replicate
+enum.convolvePadding.zero = TODO Zero
+
+enum.dialogViewMode.details = Particolari
+enum.dialogViewMode.icons = Icone
+enum.dialogViewMode.list = Elenco
+enum.dialogViewMode.thumbnails = Miniature
+enum.dialogViewMode.tiles = Mosaico
+
+enum.disposalMethod.leaveInPlace = TODO Leave in place
+enum.disposalMethod.restoreBackground = TODO Restore background
+enum.disposalMethod.restorePrevious = TODO Restore previous
+enum.disposalMethod.unspecified = TODO Unspecified
+
+enum.ditherMethod.bayer = TODO Bayer
+enum.ditherMethod.floydSteinberg = TODO Floyd-Steinberg
+enum.ditherMethod.nearest = TODO Nearest
+enum.ditherMethod.random = TODO Random
+
+enum.fileFormat.all = Tutti i files
+enum.fileFormat.allKnown = Tutti i tipi di files conosciuti
+enum.fileFormat.ani = Cursori animati
+enum.fileFormat.bmp = Bitmap Windows
+enum.fileFormat.cur = Cursori
+enum.fileFormat.dib = TODO Device Independent Bitmap
+enum.fileFormat.exec = Tutti i files eseguibili e librerie d'icone
+enum.fileFormat.gfie = Formato nativo GFIE Pro
+enum.fileFormat.gif = Graphics Interchange Format
+enum.fileFormat.icl = Librerie d'icone
+enum.fileFormat.icns = Apple Icon Image Format
+enum.fileFormat.ico = Icone
+enum.fileFormat.j2k = TODO JPEG 2000 raw codestream
+enum.fileFormat.jp2 = TODO JPEG 2000 container
+enum.fileFormat.jpeg = Files JPEG
+enum.fileFormat.jpeg2000 = Files JPEG 2000
+enum.fileFormat.obj3d = Files oggetto Wavefront
+enum.fileFormat.pam = TODO Portable Arbitrary Map
+enum.fileFormat.pbm = Portable BitMap (1-bit)
+enum.fileFormat.pcx = Files PCX
+enum.fileFormat.pgm = Portable GrayMap (8-bit)
+enum.fileFormat.png = Portable Network Graphics
+enum.fileFormat.pnm = Portable AnyMap (24-bit)
+enum.fileFormat.ppm = Portable PixMap (24-bit)
+enum.fileFormat.res = Files di risorse Win32P
+enum.fileFormat.rtf = TODO Rich Text Format
+enum.fileFormat.svg = Grafica vettoriale scalabile
+enum.fileFormat.swa = TODO Swatches
+enum.fileFormat.tga = Truevision TGA
+enum.fileFormat.tiff = Tagged Image File Format
+enum.fileFormat.txt = TODO Plain text
+enum.fileFormat.webp = WebP
+enum.fileFormat.xpm = Files X-Pixmap
+
+enum.interpolation.area = TODO Area
+enum.interpolation.linear = TODO Linear
+enum.interpolation.nearest = TODO Nearest
+
+enum.kernel.boxBlur = TODO Box blur
+enum.kernel.gaussian0_5 = TODO Gaussian blur (radius: 0.5)
+enum.kernel.horizontalEdges = TODO Horizontal edges
+enum.kernel.identity = TODO Identity
+enum.kernel.laplace = TODO Laplace
+enum.kernel.sobelHorizontal = TODO Sobel (horizontal)
+enum.kernel.sobelVertical = TODO Sobel (vertical)
+enum.kernel.verticalEdges = TODO Vertical edges
+
+enum.key.alt = Alt
+enum.key.ctrl = Ctrl
+enum.key.del = Canc
+enum.key.enter = Invio
+enum.key.shift = Shift
+
+enum.mouseWheelAction.none = Nulla
+enum.mouseWheelAction.scroll = Scorrimento
+enum.mouseWheelAction.zoom = Ingrandimento
+
+enum.pixelFormat.16Colors = 16 colori
+enum.pixelFormat.1Bit = 1-bit
+enum.pixelFormat.24Bit = 24-bit
+enum.pixelFormat.256Colors = 256 colori
+enum.pixelFormat.32Bit = 32-bit
+
+enum.printRange.currentFrame = TODO Current frame
+enum.printRange.currentPage = Selezionata
+enum.printRange.wholeDocument = TODO Whole document
+
+enum.resourceType.ani = TODO Animated cursor
+enum.resourceType.bitmap = Bitmap
+enum.resourceType.cursor = Cursore
+enum.resourceType.icon = Icona
+
+enum.retouchMode.blur = Sfoca
+enum.retouchMode.burn = Scalda
+enum.retouchMode.dodge = Scarta
+enum.retouchMode.hue = Tinta
+enum.retouchMode.sharpen = Metti a fuoco
+enum.retouchMode.sponge = Spugna
+
+enum.tool.brush = Pennello
+enum.tool.bucket = Riempimento
+enum.tool.crop = Ritaglio
+enum.tool.ellipse = Disegna Ellisse
+enum.tool.eraser = Gomma
+enum.tool.eyedropper = Contagocce
+enum.tool.gradient = Gradiente
+enum.tool.helpSelect = TODO Ctrl: subtract, Shift: add, Shift+Ctrl: intersect
+enum.tool.helpTransform = TODO Ctrl: keep aspect ratio, Shift: advanced transform
+enum.tool.hotspot = Punto attivo
+enum.tool.lasso = Selezione Lazo
+enum.tool.line = Disegna Linea
+enum.tool.none = Nulla
+enum.tool.pencil = Matita
+enum.tool.recolor = Ricolora
+enum.tool.rect = Disegna Rettangolo
+enum.tool.retouch = Ritocco
+enum.tool.selEllipse = Selezione ellittica
+enum.tool.selPencil = Selezione Matita
+enum.tool.selRect = Selezione rettangolare
+enum.tool.text = Scrivi Testo
+enum.tool.transform = Trasforma/Sposta
+enum.tool.wand = Selezione Bacchetta magica
+
+exif.compositeImage.capturedWhenShooting = TODO Captured when shooting
+exif.compositeImage.general = TODO General
+exif.compositeImage.nonComposite = TODO Not a composite image
+
+exif.contrast.hard = TODO Hard
+exif.contrast.normal = TODO Normal
+exif.contrast.soft = TODO Soft
+
+exif.dataDesc.binary = TODO {n} bytes
+exif.dataDesc.table = TODO {nRows}x{nCols} table
+
+exif.exifMetadata = TODO Exif metadata
+
+exif.exposureMode.auto = TODO Auto
+exif.exposureMode.autoBracket = TODO Auto bracket
+exif.exposureMode.manual = TODO Manual
+
+exif.exposureProgram.action = TODO Action
+exif.exposureProgram.aperturePriority = TODO Aperture priority
+exif.exposureProgram.creative = TODO Creative
+exif.exposureProgram.landscape = TODO Landscape
+exif.exposureProgram.manual = TODO Manual
+exif.exposureProgram.normal = TODO Normal
+exif.exposureProgram.portrait = TODO Portrait
+exif.exposureProgram.shutterPriority = TODO Shutter priority
+
+exif.fileSource.dsc = TODO Digital camera
+exif.fileSource.reflexScanner = TODO Reflex scanner
+exif.fileSource.transparentScanner = TODO Transparent scanner
+
+exif.flashMode.auto = TODO Auto
+exif.flashMode.off = TODO Off
+exif.flashMode.on = TODO On
+
+exif.gainControl.highGainDown = TODO High gain down
+exif.gainControl.highGainUp = TODO High gain up
+exif.gainControl.lowGainDown = TODO Low gain down
+exif.gainControl.lowGainUp = TODO Low gain up
+exif.gainControl.none = TODO None
+
+exif.gpsMeasureMode.2d = TODO 2D
+exif.gpsMeasureMode.3d = TODO 3D
+
+exif.gpsStatus.invalid = TODO Invalid
+exif.gpsStatus.valid = TODO Valid
+
+exif.gpsTrackRef.magneticNorth = TODO Magnetic north
+exif.gpsTrackRef.trueNorth = TODO True north
+
+exif.lightSource.cloudyWeather = TODO Cloudy weather
+exif.lightSource.coolWhiteFluorescent = TODO Cool white
+exif.lightSource.dayWhiteFluorescent = TODO Day white
+exif.lightSource.daylight = TODO Daylight
+exif.lightSource.daylightFluorescent = TODO Daylight fluorescent
+exif.lightSource.fineWeather = TODO Fine weather
+exif.lightSource.flash = TODO Flash
+exif.lightSource.fluorescent = TODO Fluorescent
+exif.lightSource.isoStudioTungsten = TODO ISO studio tungsten
+exif.lightSource.shade = TODO Shade
+exif.lightSource.standardLightA = TODO Standard light A
+exif.lightSource.standardLightB = TODO Standard light B
+exif.lightSource.standardLightC = TODO Standard light C
+exif.lightSource.tungsten = TODO Incandescent light bulb
+exif.lightSource.warmWhiteFluorescent = TODO Warm white
+exif.lightSource.whiteFluorescent = TODO Neutral white
+
+exif.meteringMode.average = TODO Average
+exif.meteringMode.centerWeightedAverage = TODO Center weighted average
+exif.meteringMode.multiSpot = TODO Multi-spot
+exif.meteringMode.partial = TODO Partial
+exif.meteringMode.pattern = TODO Pattern
+exif.meteringMode.spot = TODO Spot
+
+exif.noData = TODO (No data)
+exif.other = TODO Other
+
+exif.saturation.high = TODO High
+exif.saturation.low = TODO Low
+exif.saturation.normal = TODO Normal
+
+exif.sceneCaptureType.landscape = TODO Landscape
+exif.sceneCaptureType.nightScene = TODO Night scene
+exif.sceneCaptureType.portrait = TODO Portrait
+exif.sceneCaptureType.standard = TODO Standard
+
+exif.sensingMethod.colorSeqArea = TODO Color sequential area sensor
+exif.sensingMethod.colorSeqLinear = TODO Color sequential linear sensor
+exif.sensingMethod.oneChipColorArea = TODO 1-chip color area sensor
+exif.sensingMethod.threeChipColorArea = TODO 3-chip color area sensor
+exif.sensingMethod.trilinear = TODO Trilinear sensor
+exif.sensingMethod.twoChipColorArea = TODO 2-chip color area sensor
+
+exif.sensitivityType.iso = TODO ISO speed
+exif.sensitivityType.rei = TODO Recommended exposure index (REI)
+exif.sensitivityType.reiAndIso = TODO REI and ISO
+exif.sensitivityType.sos = TODO Standard output sensitivity (SOS)
+exif.sensitivityType.sosAndIso = TODO SOS and ISO
+exif.sensitivityType.sosAndRei = TODO SOS and REI
+exif.sensitivityType.sosAndReiAndIso = TODO SOS, REI and ISO
+
+exif.sharpness.hard = TODO Hard
+exif.sharpness.normal = TODO Normal
+exif.sharpness.soft = TODO Soft
+
+exif.subjectArea.centerX = TODO Center X
+exif.subjectArea.centerY = TODO Center Y
+exif.subjectArea.circle = TODO Circle
+exif.subjectArea.diameter = TODO Diameter
+exif.subjectArea.point = TODO Point
+exif.subjectArea.rect = TODO Rectangle
+exif.subjectArea.shape = TODO Shape
+
+exif.subjectDistanceRange.closeView = TODO Close view
+exif.subjectDistanceRange.distantView = TODO Distant view
+exif.subjectDistanceRange.macro = TODO Macro
+
+exif.tag.acceleration = TODO Acceleration
+exif.tag.aperture = TODO Aperture value
+exif.tag.artist = TODO Artist
+exif.tag.bodySerialNumber = TODO Camera body serial number
+exif.tag.brightness = TODO Brightness
+exif.tag.cameraElevationAngle = TODO Camera elevation angle
+exif.tag.cameraOwnerName = TODO Camera owner name
+exif.tag.cfaPattern = TODO Color filter array (CFA) pattern
+exif.tag.compositeImage = TODO Composite image
+exif.tag.contrast = TODO Contrast
+exif.tag.copyright = TODO Copyright
+exif.tag.customRendered = TODO Custom rendered
+exif.tag.dateTimeDigitized = TODO Picture digitized
+exif.tag.dateTimeOriginal = TODO Picture taken
+exif.tag.deviceSettingDescription = TODO Device setting description
+exif.tag.digitalZoomRatio = TODO Digital zoom ratio (0 = no digital zoom)
+exif.tag.editorCopyright = TODO Editor copyright
+exif.tag.exposureBias = TODO Exposure bias
+exif.tag.exposureIndex = TODO Exposure index
+exif.tag.exposureMode = TODO Exposure mode
+exif.tag.exposureProgram = TODO Exposure program
+exif.tag.exposureTime = TODO Exposure time
+exif.tag.exposureTimes = TODO Exposure times
+exif.tag.fNumber = TODO f-number
+exif.tag.fileSource = TODO File source
+exif.tag.flash = TODO Flash info
+exif.tag.flashEnergy = TODO Flash energy
+exif.tag.flashFired = TODO Fired
+exif.tag.flashFunctionPresent = TODO Flash function present
+exif.tag.flashMode = TODO Flash mode
+exif.tag.flashStrobeReturnLightDetected = TODO Strobe return light detected
+exif.tag.focalLength = TODO Focal length
+exif.tag.focalLengthIn35mmFilm = TODO Focal length assuming 35mm film
+exif.tag.focalPlaneXDpi = TODO Focal plane horiz. DPI
+exif.tag.focalPlaneYDpi = TODO Focal plane vert. DPI
+exif.tag.gainControl = TODO Gain control
+exif.tag.gpsAltitude = TODO GPS altitude
+exif.tag.gpsAreaInformation = TODO GPS area information
+exif.tag.gpsDateTime = TODO GPS date & time
+exif.tag.gpsDestBearing = TODO Destination bearing
+exif.tag.gpsDestBearingRef = TODO Destination bearing reference
+exif.tag.gpsDestDistance = TODO Destination distance
+exif.tag.gpsDestLatitude = TODO Destination GPS latitude
+exif.tag.gpsDestLongitude = TODO Destination GPS longitude
+exif.tag.gpsDifferential = TODO Differential GPS
+exif.tag.gpsDop = TODO GPS DOP (dilution of precision)
+exif.tag.gpsHPositioningError = TODO GPS horizontal pos. error
+exif.tag.gpsImageDirection = TODO GPS image direction
+exif.tag.gpsImageDirectionRef = TODO GPS image direction reference
+exif.tag.gpsLatitude = TODO GPS latitude
+exif.tag.gpsLongitude = TODO GPS longitude
+exif.tag.gpsMapDatum = TODO GPS map datum
+exif.tag.gpsMeasureMode = TODO GPS measurement mode
+exif.tag.gpsProcessingMethod = TODO GPS processing method
+exif.tag.gpsSatellites = TODO GPS satellites
+exif.tag.gpsSpeed = TODO GPS speed
+exif.tag.gpsStatus = TODO GPS status
+exif.tag.gpsTrack = TODO GPS direction of motion
+exif.tag.gpsTrackRef = TODO GPS direction of motion reference
+exif.tag.horizDpi = TODO Horizontal DPI
+exif.tag.humidity = TODO Humidity
+exif.tag.imageDescription = TODO Image description
+exif.tag.imageUniqueId = TODO Image unique ID
+exif.tag.isoSpeed = TODO ISO speed
+exif.tag.isoSpeedLatitudeyyy = TODO ISO speed latitude yyy
+exif.tag.isoSpeedLatitudezzz = TODO ISO speed latitude zzz
+exif.tag.lensMake = TODO Lens manufacturer
+exif.tag.lensModel = TODO Lens model
+exif.tag.lensSerialNumber = TODO Lens serial number
+exif.tag.lensSpec = TODO Lens specification
+exif.tag.lightSource = TODO Light source
+exif.tag.make = TODO Manufacturer
+exif.tag.makerNote = TODO Maker note
+exif.tag.maxExposureTime = TODO Max. exposure time
+exif.tag.maxExposureTimeUsed = TODO Max. exposure time used
+exif.tag.maxFocalLength = TODO Max. focal length
+exif.tag.meteringMode = TODO Metering mode
+exif.tag.minExposureTime = TODO Min. exposure time
+exif.tag.minExposureTimeUsed = TODO Min. exposure time used
+exif.tag.minFNumber = TODO Smallest f-number of lens
+exif.tag.minFNumberForMaxFocalLength = TODO Min. f-number for max. focal length
+exif.tag.minFNumberForMinFocalLength = TODO Min. f-number for min. focal length
+exif.tag.minFocalLength = TODO Min. focal length
+exif.tag.model = TODO Model
+exif.tag.nSequences = TODO Number of sequences
+exif.tag.optoElectricConversionFunction = TODO Opto-electric conversion function
+exif.tag.photographerCopyright = TODO Photographer copyright
+exif.tag.photographicSensitivity = TODO Photographic sensitivity
+exif.tag.pressure = TODO Pressure
+exif.tag.recommendedExposureIndex = TODO Recommended exposure index (REI)
+exif.tag.redEyeReduction = TODO Red-eye reduction
+exif.tag.relatedSoundFile = TODO Related sound file
+exif.tag.saturation = TODO Saturation
+exif.tag.sceneCaptureType = TODO Scene capture type
+exif.tag.sceneType = TODO Scene type
+exif.tag.sensingMethod = TODO Sensing method
+exif.tag.sensitivityType = TODO Sensitivity type
+exif.tag.sharpness = TODO Sharpness
+exif.tag.shutterSpeed = TODO Shutter speed
+exif.tag.sourceExposureTimesOfCompositeImage = TODO Exposure times of source images
+exif.tag.sourceImageNumberOfCompositeImage = TODO No. of source images for composite image
+exif.tag.sourceImageNumberTotal = TODO Total number of source images
+exif.tag.sourceImageNumberUsed = TODO Number of source images used
+exif.tag.spatialFrequencyResponse = TODO Spatial frequency response
+exif.tag.spectralSensitivity = TODO Spectral sensitivity
+exif.tag.standardOutputSensitivity = TODO Standard output sensitivity (SOS)
+exif.tag.subjectArea = TODO Subject area
+exif.tag.subjectDistance = TODO Subject distance
+exif.tag.subjectDistanceRange = TODO Subject distance range
+exif.tag.subjectLocation = TODO Subject location
+exif.tag.sumOfExposureTimes = TODO Sum of exposure times
+exif.tag.sumOfExposureTimesUsed = TODO Sum of exposure times used
+exif.tag.temperature = TODO Temperature
+exif.tag.totalExposurePeriod = TODO Total exposure period
+exif.tag.userComment = TODO User comment
+exif.tag.vertDpi = TODO Vertical DPI
+exif.tag.waterDepth = TODO Water depth
+exif.tag.whiteBalance = TODO White balance
+exif.tag.xpKeywords = TODO XP keywords
+exif.tag.xpSubject = TODO XP subject
+
+exif.undefined = TODO Undefined
+
+exif.whiteBalanceMode.auto = TODO Auto
+exif.whiteBalanceMode.manual = TODO Manual
+
+label.alpha = TODO Alpha
+label.amount = Quantità
+label.angleDegrees = Angolo (gradi)
+label.antialias = Antialias
+label.applyToAll = TODO Apply to all
+label.black = TODO Black
+label.blackMatte = Nero opaco
+label.blue = Blu
+label.blur = Sfoca
+label.borderMode = TODO Border mode
+label.boxBlur = Sfocatura quadrata
+label.brightness = Luminosità
+label.browseForFolder = TODO Browse for folder
+label.charAlpha = A
+label.charBlack = TODO K
+label.charBlue = B
+label.charCyan = TODO C
+label.charGreen = V
+label.charHue = TODO H
+label.charMagenta = TODO M
+label.charRed = R
+label.charSaturation = TODO S
+label.charValue = TODO V
+label.charYellow = TODO Y
+label.color = Colore
+label.compact = Aspetto compatto
+label.contrast = TODO Contrast
+label.cyan = TODO Cyan
+label.distance = Distanza
+label.dpi = DPI
+label.exposure = TODO Exposure
+label.fileSize = Dimensioni file
+label.filter = TODO Filter
+label.gamma = Gamma
+label.gaussianBlur = Sfocatura gaussiana
+label.green = Verde
+label.height = Altezza
+label.hue = TODO Hue
+label.hueShift = Tonalità
+label.innerGlow = Interno splendente
+label.intensity = Intensità
+label.keepAspectRatio = TODO Keep aspect ratio
+label.kind = Tipo
+label.langPack = File della lingua
+label.magenta = TODO Magenta
+label.matteColor = Colore
+label.modified = TODO Modified
+label.more = TODO more
+label.opacity = Opacità
+label.outerGlow = Esterno splendente
+label.percentSign = TODO %
+label.pixelsShort = px
+label.position = Posizione
+label.radius = Raggio
+label.red = Rosso
+label.redraw = Ridisegna
+label.refresh = Aggiorna
+label.retina = TODO Retina
+label.saturation = Saturazione
+label.size = Dimensioni
+label.threshold = Soglia
+label.toric = Modo torico
+label.unitOfMeasurement = TODO Unit
+label.untitled = Senza titolo
+label.value = TODO Value
+label.whiteMatte = Bianco opaco
+label.width = Larghezza
+label.yellow = TODO Yellow
+
+layer.background = Sfondo
+layer.floatingSel = Selezione fluttuante
+layer.hidden = TODO hidden
+layer.layer = Livello
+layer.visible = TODO visible
+
+menu.edit = Modifica
+
+menu.edit.cantRedo = Niente da ripetere
+menu.edit.cantUndo = Niente da annullare
+menu.edit.copy = Copia
+menu.edit.cropTransparency = Rimuovi parti trasparenti
+menu.edit.cut = Taglia
+menu.edit.delete = Elimina
+menu.edit.flipHoriz = Rifletti orizzontalmente
+menu.edit.flipVert = Rifletti verticalmente
+menu.edit.paste = Incolla
+menu.edit.pasteDoc = Incolla come nuovo documento
+menu.edit.pasteFrame = TODO Paste as New Frame
+menu.edit.pastePage = Incolla come nuova pagina
+menu.edit.redo = Ripeti
+menu.edit.rotate180 = Ruota di 180 gradi
+menu.edit.rotateLeft = Ruota di 90 gradi in senso antiorario
+menu.edit.rotateRight = Ruota di 90 gradi in senso orario
+menu.edit.selAll = Seleziona tutto
+menu.edit.selInvert = Inverti selezione
+menu.edit.selLoad = Apri maschera di selezione
+menu.edit.selNone = Nessuna selezione
+menu.edit.selSave = Salva maschera di selezione
+menu.edit.selTransform = Trasforma la selezione
+menu.edit.transform = Trasforma
+menu.edit.undo = Annulla
+
+menu.file = File
+
+menu.file.batchConvert = Converti selezione di files
+menu.file.close = Chiudi
+menu.file.closeAll = Chiudi tutti
+menu.file.closeOthers = Chiudi tutte le altre schede
+menu.file.exit = Esci dal programma
+menu.file.exportAndroid = Esporta Drawable Android
+menu.file.loadText = TODO Load text
+menu.file.metadata = Metadati
+menu.file.newGraphic = Nuova grafica
+menu.file.newLibrary = Nuova libreria
+menu.file.open = Apri
+menu.file.openScript = Apri script
+menu.file.print = Stampa
+menu.file.recentFiles = Files recenti
+menu.file.revert = Ritorna al salvato
+menu.file.rfClear = Cancella l'elenco
+menu.file.save = Salva
+menu.file.saveAll = Salva tutti
+menu.file.saveAs = Salva come
+menu.file.saveCopy = Salva una copia
+menu.file.saveScript = Salva script
+menu.file.saveScriptAs = Salva script come
+menu.file.saveText = TODO Save text
+
+menu.filters = Filtri
+
+menu.filters.average = Media
+menu.filters.bevel = Smussa
+menu.filters.blurCustom = Sfoca
+menu.filters.blurMore = Sfoca (molto)
+menu.filters.blurSoft = Sfoca (poco)
+menu.filters.closing = TODO Closing
+menu.filters.colorize = TODO Colorize
+menu.filters.convolve = TODO Convolve
+menu.filters.dropShadow = Ombra
+menu.filters.exposure = Esposizione
+menu.filters.formulae = Calculazioni RGB
+menu.filters.glow = Illumina
+menu.filters.grayscale = Scala di grigi
+menu.filters.hs = Tinta/Saturazione
+menu.filters.invert = Inverti
+menu.filters.max = TODO Maximum (dilate)
+menu.filters.median = TODO Median
+menu.filters.min = TODO Minimum (erode)
+menu.filters.morph = TODO Morphology
+menu.filters.opacity = Opacità
+menu.filters.opening = TODO Opening
+menu.filters.paintContour = Dipingi contorno
+menu.filters.removeMatte = Rimuovi opacità
+menu.filters.rgb = Canali RGB
+menu.filters.scripting = Scripting
+menu.filters.sharpen = Contrasto
+menu.filters.solarize = Solarizza
+menu.filters.unsharpMask = Maschera di contrasto
+
+menu.frames = TODO Frames
+
+menu.frames.delete = TODO Delete frame
+menu.frames.duplicate = TODO Duplicate frame
+menu.frames.export = TODO Export frame
+menu.frames.exportAll = TODO Export all frames
+menu.frames.gifToKeyframes = TODO Convert GIF frames to keyframes
+menu.frames.import = TODO Import frames
+menu.frames.new = TODO New frame
+menu.frames.prop = TODO Frame properties
+menu.frames.uniformRate = Applica stessa durata a tutti i fotogrammi
+
+menu.help = Guida
+
+menu.help.about = Informazioni
+menu.help.bugReport = TODO Bug report
+menu.help.contents = Contenuti
+menu.help.donate = Donazione
+menu.help.homepage = Homepage
+menu.help.support = Supporto online
+menu.help.whatsThis = TODO What's this?
+
+menu.icon = Icona
+
+menu.icon.createAndroid = Crea Drawable Android da immagine
+menu.icon.createMac = Crea icona Mac da immagine
+menu.icon.createWin = Crea icona Windows da immagine
+menu.icon.test = Prova l'icona su uno sfondo
+
+menu.layers = Livelli
+
+menu.layers.delete = Elimina livello
+menu.layers.duplicate = Copia livello
+menu.layers.flatten = Unifica tutti i livelli
+menu.layers.fromSel = Crea livello dalla selezione
+menu.layers.mergeSelected = Unifica livelli selezionati
+menu.layers.mergeVisible = Unifica livelli visibili
+menu.layers.new = Nuovo livello
+menu.layers.prop = Proprietà livello
+menu.layers.whiteBackground = TODO Add white background layer
+
+menu.library = Libreria
+
+menu.library.add = Aggiungi risorse
+menu.library.extractEdit = Estrai per modificare
+menu.library.extractSave = Estrai e salva
+menu.library.prop = Proprietà risorsa
+menu.library.remove = Rimuovi risorse
+menu.library.replace = Sostituisci risorse
+
+menu.pages = TODO Pages
+
+menu.pages.delete = Elimina pagina
+menu.pages.duplicate = TODO Duplicate page
+menu.pages.export = Esporta pagina
+menu.pages.exportAll = Esporta tutte le pagine
+menu.pages.import = Importa pagina
+menu.pages.new = Nuova pagina
+menu.pages.prop = Proprietà pagina
+
+menu.run = Esegui script
+
+menu.run.run = Avvia
+menu.run.stop = Ferma
+
+menu.settings = Opzioni
+
+menu.settings.language = Lingua
+menu.settings.preferences = Preferenze
+
+menu.tab.copyFilename = Copia nome file negli appunti
+menu.tab.copyFolder = Copia cartella negli appunti
+menu.tab.copyFullPath = Copia percorso completo negli appunti
+menu.tab.openFolder = Apri cartella contenente
+menu.tab.openFolderCmd = Apri cartella contenente dalla riga di comando
+
+menu.view = Visualizza
+
+menu.view.100Percent = 100%
+menu.view.cellGrid = Griglia personalizzata
+menu.view.centerLines = Assi cartesiani
+menu.view.colorPicker = Selezione colore
+menu.view.fitWindow = Adatta alla finestra
+menu.view.frames = TODO List of frames
+menu.view.grid = Griglia
+menu.view.layers = Livelli
+menu.view.pages = Elenco pagine
+menu.view.panelLeft = Pannello sinistro
+menu.view.panelRight = Pannello destro
+menu.view.startupScreen = Finestra d'inizio
+menu.view.toolBehavior = Impostazioni degli strumenti
+menu.view.toolbar = Strumenti
+menu.view.zoomIn = Ingrandimento
+menu.view.zoomOut = Riduzione
+
+message.aborted = TODO Aborted
+message.addFiles = Aggiungere alcuni file all'elenco
+message.alreadyOpen = TODO "{filename}" already open
+message.confirmBatchConvert = TODO Do you want to run the conversion?
+message.confirmDestroyExe = Le icone/cursori non possono essere facilmente sostituiti in questo file eseguibile o libreria d'icona.<br><br>Se si tratta di un programma o una libreria DLL che hanno altri scopi, come conservare le icone, è possibilile chei le sue funzioni siano distrutte durante il salvataggio.<br>Se il file è solo una libreria di icone, allora probabilmente non succederà nulla.<br><br>Continuare comunque ?
+message.confirmRemove = Eliminare gli elementi selezionati ?
+message.confirmRevert = Tutti i cambiamenti di "{filename}" saranno persi e non si potrà annullare l'operazione.<br>Continuare comunque?
+message.confirmStopBatchConvert = TODO Are you sure you want to stop the batch conversion job?
+message.confirmation = Conferma
+message.cropped = L'immagine è stata ritagliata per essere più grande di {width}x{height}.<br>Salvare l'immagine causerà perdita di dati.<br>Usa Opzioni|Preferenze per aumentare il limite delle dimensioni dell'immagine.
+message.dataLossInfo = Per evitare di perdere dati, salva il documento anche in un altro formato.
+message.dirNotExist = TODO Directory "{filename}" does not exist
+message.dlColorDepth = Alcune parti dell'informazione colore non sono state salvate.
+message.dlError = Si è verificato un errore sconosciuto  durante il tentativo di salvare.<br>Non è stato possibile salvare il documento.
+message.dlIcns = Alcune pagine potrebbero non essere salvate a causa delle limitazioni del formato ICNS. Vedi la sezione aiuto per maggiori dettagli sui formati di file.
+message.dlIcnsLoadDropPages = Le pagine {} non possono essere caricate da questo file ICNS. Questa è una limitazione di GFIE.
+message.dlLayers = Questo formato di file non supporta i livelli. L'immagine sarà salvata con livelli unificati.
+message.dlMultipage = Questo formato di file non supporta il salvataggio multi pagina in un unico file.<br>E' stata salvata solo la prima pagina.
+message.dlSize256 = Questo formato di file non supporta il salvataggio di immagini più grandi di 256x256.<br>Queste immagini sono state ritagliate.
+message.dlTransparency = Questo formato di file non supporta la trasparenza.
+message.errorFilterOpaque = Questo filtro non ha alcun effetto su immagini completamente opache. L'immagine ha bisogno di parti trasparenti per il funzionamento del filtro.
+message.errorICNSCannotSaveAnyPage = TODO ICNS only supports a set of standard page sizes and color depths. No page in this document meets these criteria.
+message.errorNoTextureCoords = Errore: nessuna coordinata di trama trovata nell'oggetto 3D specificato.
+message.errorWriteRes = Non è riuscito salvare i cambiamenti delle risorse date.
+message.exportAndroidDuplicateDPI = TODO There are multiple pages with {dpi} DPI. Only the first one can be exported.
+message.exportAndroidError = Suggerimento: il documento corrente probabilmente non è un Drawable Android multi-DPI. È possibile creare un Drawable Android utilizzando Icona | Crea Drawable Android da immagine.
+message.exportAndroidNoDpi = Il valore DPI deve essere tra {} per tutte le pagine.
+message.exportAndroidNoTitle = Imposta il titolo del documento sull'identificatore di risorse Android desiderato. (Vedi file | metadati)
+message.exportAndroidPromptCreateDrawable = TODO No drawable-* subdirectories could be found under "{folder}". Do you want to continue?
+message.exportAndroidSelectFolder = Seleziona la cartella delle risorse del progetto Android
+message.failAccess = TODO Could not access "{filename}". GFIE may not have sufficient permissions, or the disk may be full.
+message.failDetectExeFormat = TODO Could not detect format of "{filename}". The file might not be a valid Windows executable.
+message.failMoveToTrash = TODO Could not move "{filename}" to the trash.
+message.failMultipleOpen = Alcuni file potrebbero non essere aperti.
+message.failNewFolder = TODO Could not create folder "{folder}". GFIE may not have sufficient permissions, or the disk may be full.
+message.failPrint = TODO Printing failed.
+message.failSave = TODO Could not save "{filename}". GFIE may not have permissions to write to this folder or file, or the disk may be full.
+message.failSingleOpen = Non è stato possibile caricare "{filename}".
+message.ftNoOptions = Il formato di file selezionato non può essere personalizzato
+message.gifAlreadyKeyframes = TODO All frames of the current page have the "Restore background" disposal method. Thus they are already keyframes.
+message.invalidFileFormat = Il file "{filename}" ha un formato diverso da "{format}".<br>Il file può essere corrotto, può avere un estensione non valida, oppure è stato scelto un filtro non corretto nella finestra di dialogo.
+message.nPagesExported = TODO {n} pages exported
+message.noLanguagePack = TODO No language packs found in "{folder}"
+message.noLayers = Non sono presenti livelli
+message.noLayersSelected = Non è stato selezionato nessun livello
+message.noSelection = TODO Nothing is selected
+message.notAnimationOneFrame = TODO This page is not an animation because it has only one frame.
+message.notExist = "{filename}" non esiste
+message.notImageFile = TODO "{filename}" is not an image file.
+message.overwrite = Sovrascrivere "{filename}"?
+message.overwriteMultiple = Sovrascrivere i seguenti files?
+message.pageSize0 = Errore: la larghezza fisica della pagina non può essere di 0 mm.<br>Scegliere un altro formato di pagina.
+message.peNotSupported = Non è stato possibile aprire "{filename}" perché il formato PE (eseguibile portatile) non è supportato su questa piattaforma.
+message.programNeeded = {program} è necessario per l'elaborazione dei file {filename}.<br>Assicurarsi che i componenti necessari siano installati correttamente.
+message.resExist = Esiste già un'altra risorsa con il tipo, il nome e la lingua scelto.<br>Scegliere un altro nome o lingua.
+message.saveChanges = Salvare le modifiche in "{filename}"?
+message.saveLibraryTab = TODO Please switch to the "{libraryTabName}" tab and choose "{menuItem}" there to save your changes.
+message.selectFormats = TODO Please select one or more icon formats
+message.selectIconDoc = TODO Please select an icon document
+message.selectItem = TODO Please select an item
+message.selectItems = Scegliere alcuni elementi
+message.selectLayers = TODO Please select one or more layers
+message.selectPages = Scegliere alcune pagine
+message.selectSingleLayer = TODO Please select a single layer
+message.successPrint = TODO Printing successful.
+message.successRevert = TODO "{filename}" successfully reloaded from disk.
+message.unknownFileType = Il formato del file "{filename}" non è stato determinato automaticamente.<br>Questo file non può essere aperto o salvato da Greenfish Icon Editor Pro oppure ha un estensione non valida.
+
+startupScreen.chooseAction = Passa il puntatore sopra le immagini quì a lato per iniziare un progetto
+startupScreen.convert = Converti una selezione di immagini
+startupScreen.convertInfo = Converte la selezione di immagini creando icone o immagini di formato diverso
+startupScreen.help = Guida
+startupScreen.ng = Crea una nuova grafica
+startupScreen.ngInfo = Crea una nuova icona, cursore o animazione
+startupScreen.nl = Crea una nuova libreria
+startupScreen.nlInfo = Crea una libreria (.ICL) o file di risorse (.RES) vuoti
+startupScreen.none = Nessuna azione
+startupScreen.noneInfo = Chiude questa finestra iniziale
+startupScreen.open = Apri un documento esistente
+startupScreen.openInfo = Apre un file d'immagine, libreria d'icone, file eseguibile o file di risorse
+startupScreen.recentInfo = Apre un file modificato di recente
+startupScreen.show = Mostra sempre questa finestra all'avvio
+startupScreen.testVersionInfo = TODO This is a test version of Greenfish Icon Editor Pro ({version}). Please report bugs and give feedback {beginBugReportLink}here{endBugReportLink}. Thank you!
+startupScreen.welcome = Benvenuto!
+
+tabBar.scrollLeft = TODO Scroll left
+tabBar.scrollRight = TODO Scroll right
+
+timeLeft.aFewSeconds = TODO A few seconds left
+timeLeft.hourMinute = TODO {hour} h {minute} min left
+timeLeft.minutes = TODO {} minutes left
+timeLeft.seconds = TODO {} seconds left
+
+undo.createFloating = Crea selezione fluttuante
+undo.flipRotate = Rifletti/Ruota
+undo.mergeLayers = Unifica livelli
+undo.moveFrame = TODO Move frame
+undo.moveLayers = Muovi livelli
+undo.movePage = Muovi pagina
+
+warning.aniDifferentDuration = TODO Frame #{frameIndex} has different durations in pages #{pageIndex1} and #{pageIndex2} which is not allowed in ANI: {duration1} vs. {duration2} seconds
+warning.aniDifferentFrameCount = TODO Pages #{pageIndex1} and #{pageIndex2} have a different number of frames which is not allowed in ANI: {frameCount1} vs. {frameCount2}
+warning.badGraphicResource = TODO Cannot decode graphic resource with type="{type}", name="{name}" and language="{language}"
+warning.cannotReadPage = TODO Cannot read page #{pageIndex}: {message}
+warning.cannotReadResource = TODO Cannot read resource with type="{type}", name="{name}" and language="{language}"
+warning.cannotSaveANIMetadata = TODO Cannot save ANI metadata to this file format
+warning.cannotSaveExif = TODO Page #{pageIndex} has Exif metadata which cannot be saved to this file format
+warning.cannotSaveHotSpot = TODO Page #{pageIndex} frame #{frameIndex} has a cursor hot spot which cannot be stored in this file format
+warning.cannotSaveLayers = TODO Page #{pageIndex} frame #{frameIndex}: layer info cannot be saved in this file format; image will be saved flattened
+warning.cannotSaveMultipleFrames = TODO Page #{pageIndex} has multiple frames which is not supported by this file format
+warning.cannotSaveMultiplePages = TODO Document has multiple pages, but this file format only supports a single page
+warning.cannotSavePNGMetadata = TODO Cannot save PNG metadata to this file format
+warning.duplicateResource = TODO There were two resources in the loaded file with the same type ({type}), name ({name}) and language ({language}). One was renamed to {newName}
+warning.emptyImage = TODO Zero-sized image
+warning.exifCannotWriteDatetime = TODO Exif tag "{tag}": datetime invalid or out of range
+warning.exifCannotWriteGPSDate = TODO Exif: cannot represent GPS date
+warning.exifCannotWriteSubsec = TODO Exif tag "{tag}": cannot represent fractional seconds ({fracSeconds})
+warning.exifEntrySizeNotDivisible = TODO Exif tag "{tag}": data size not divisible by array element size ({elementSize}), truncated
+warning.exifEntryTooLarge = TODO Exif tag "{tag}": data size ({actual}) too large for a single element ({expected}), truncated
+warning.exifInvalidOrientation = TODO Exif: invalid orientation: {orientation}
+warning.gfieInvalidValue = TODO GFIE tag "{tag}" has invalid value
+warning.gfieMissingTag = TODO GFIE tag "{tag}" missing
+warning.icnsDifferentMasks = TODO ICNS: two 1/4/8-bit pages with the same size ({size}) have different transparency masks
+warning.icnsDuplicateFormat = TODO ICNS: two pages have the same size ({size}), nBits ({nBits}) and Retina flag ({retina})
+warning.icnsNonStandardPage = TODO ICNS: cannot write page: illegal combination of page size={size}, nBits={nBits} and Retina flag={retina}
+warning.icnsOnly1BitMask = TODO ICNS: missing {size} 1-bit image, adding dummy image based on mask of 4/8-bit format
+warning.imageMayBeCorrupt = TODO Image may be corrupt: "{message}"
+
+warning.invalidColorFlag.badIndex = TODO bad palette index
+warning.invalidColorFlag.inverted = TODO inverted color
+warning.invalidColorFlag.multipleTransparent = TODO duplicate transparent color in palette
+warning.invalidColorFlag.nonStandard = TODO some colors not from the standard palette
+warning.invalidColorFlag.notBW = TODO not black-and-white
+warning.invalidColorFlag.notGray = TODO not grayscale
+warning.invalidColorFlag.notOpaque = TODO not fully opaque
+warning.invalidColorFlag.paletteTooLarge = TODO palette too large
+warning.invalidColorFlag.translucent = TODO partially transparent colors
+
+warning.invalidColors = TODO Invalid colors encountered when loading/saving image: {flags}
+warning.libjpeg = TODO JPEG warning: {message}
+warning.libtiff = TODO TIFF warning (module: {module}): {message}
+warning.neInvalidResourceId = TODO Resource type or name {id} cannot be written to a NE file because it is at least 32768. Was written as string
+warning.openjpeg = TODO JPEG 2000 warning: {message}
+warning.pageTooLarge = TODO Page #{pageIndex} too large: max. size {maxSize}, page was cropped
+warning.resourceDataTooSmall = TODO Resource data too small for type={type}, name={name}, language={language}
+warning.resourceNameTooLong = TODO Cannot save resource name "{name}", too long. Truncated to {newLength} characters
+warning.shouldHaveHotSpot = TODO Page #{pageIndex} frame #{frameIndex} has no cursor hot spot defined
+warning.tiffCannotReadDirectory = TODO TIFF: cannot read directory: expected {expectedTags} tags, read {tagsRead}
+warning.tiffCannotReadTagValue = TODO TIFF: cannot read value of tag {tag}: expected {expectedSize} bytes, read {bytesRead}
+warning.tooManyResources = TODO Too many resources with type={type}, cannot save this many. Truncated from {origCount} to {newCount}
+
+whatsThis.colorPicker.backColor = TODO This color is used for drawing with the right mouse button.
+whatsThis.colorPicker.default = TODO Select black foreground color and white background color.
+whatsThis.colorPicker.foreBackColor = TODO Click to select for editing in the color picker panel. Double-click to edit with a pop-up dialog.
+whatsThis.colorPicker.foreColor = TODO This color is used for drawing with the left mouse button.
+whatsThis.colorPicker.html = TODO Accepts any standard CSS color name or a hexadecimal HTML color with optional alpha. Formats such as #RGB, #RRGGBB, #RRRRGGGGBBBB, #RGBA, #RRGGBBAA and #RRRRGGGGBBBBAAAA are all supported.<br>Example: #ff800080 (partially transparent orange).
+whatsThis.colorPicker.inverted = TODO Select the inverted color as foreground/background color.
+whatsThis.colorPicker.swapColors = TODO Swap foreground and background colors.
+whatsThis.colorPicker.swatches = TODO Click with left mouse button to pick color. Right-click to show swatch menu, with options such as storing the currently selected color into the given swatch, changing the number of swatches, or loading/saving swatches.
+whatsThis.colorPicker.transparent = TODO Select the transparent color as foreground/background color.
+
+whatsThis.frameList = TODO In GFIE Pro, each page can have one or more frames. Frames are used in animated cursors (.ANI) and animated GIFs. Note that animated cursors sometimes have multiple pages corresponding to different cursor sizes, and each of these pages will in turn have multiple frames defining the animation for that specific cursor size.
+whatsThis.layerList = TODO You can configure visibility, blend mode, name and opacity for each layer.
+whatsThis.pageList = TODO Documents consist of pages. In the context of icons and cursors, pages correspond to icon formats having different sizes or color depths, allowing the operating system to select the most suitable one for the user interface.
+
+whatsThis.tool.adjust = TODO After using this tool, the shape can be adjusted with the handles. Switching to another tool or pressing Esc hides the handles.
+whatsThis.tool.brush = TODO Left mouse button draws with foreground color, right button with background color. Works as an eraser if the transparent color is selected. If parts of the image are selected (e.g. with the "Select rectangle" tool), the brush will only draw in the selected area. Shape, size and other options can be configured with the controls below the toolbar.
+whatsThis.tool.bucket = TODO Fills contiguous, similarly colored areas with the foreground color. Right mouse button fills with background color. With the controls below the toolbar, you can configure tolerance and whether the tool should fill unconnected but similarly colored areas as well.
+whatsThis.tool.crop = TODO After using the crop tool, there is no need to double-click or press Enter to apply the cropping: it is already applied but can be adjusted with the handles displayed at the corners of the cropped image. The areas removed from the original image are still visible with less alpha to aid with adjustment. Switching to another tool hides these adjustment guides.
+whatsThis.tool.ellipse = TODO Draws an ellipse with outline only, fill only, or outline and fill. Right mouse button swaps foreground and background colors. Behaves as eraser if the transparent color is selected.
+whatsThis.tool.eraser = TODO Behaves like the brush tool but replaces the area with transparency, or reduces alpha if the eraser strength is set to a smaller value in the tool settings panel below the toolbar.
+whatsThis.tool.eyedropper = TODO Picks foreground (left mouse button) or background color (right mouse button) from the image.
+whatsThis.tool.gradient = TODO Fills the image or the selected areas with a transition from foreground to background color. Right mouse button swaps foreground and background colors. Gradient shape and other properties can be configured with the controls below the toolbar.
+whatsThis.tool.hotspot = TODO Sets cursor hot spot, i.e. the point where clicking occurs. This is typically the tip of an arrow or the center of a cross. Clicking outside the image removes the hot spot. The tool sets the same hot spot for all frames of the current page. Ctrl-click to set the hot spot for the current frame only.
+whatsThis.tool.lasso = TODO Selects an area of the image surrounded by a hand-drawn contour.
+whatsThis.tool.line = TODO Draws a straight line from one point to another. Behaves as eraser if the transparent color is selected.
+whatsThis.tool.pencil = TODO Draws a 1-pixel-wide line that can be antialiased or not. Can be configured with the controls below the toolbar. Left mouse button draws with foreground color, right button with background color. Behaves as eraser if the transparent color is selected.
+whatsThis.tool.recolor = TODO Replaces the background color with the foreground color on the image. Tolerance and other options can be configured with the controls below the toolbar. Right mouse button swaps foreground and background colors.
+whatsThis.tool.rect = TODO Draws a rectangle with outline only, fill only, or outline and fill. Right mouse button swaps foreground and background colors. Behaves as eraser if the transparent color is selected.
+whatsThis.tool.retouch = TODO Applies a filter with a brush. Available filters: Blur, Sharpen, Dodge, Burn, Hue, Sponge. Can be configured with the controls below the toolbar.
+whatsThis.tool.selEllipse = TODO Selects an ellipse.
+whatsThis.tool.selPencil = TODO Selects with a 1-pixel-wide (non-antialiased) brush.
+whatsThis.tool.selRect = TODO Selects a rectangular region.
+whatsThis.tool.select = TODO By pressing Ctrl, Shift or Shift+Ctrl when using the tool, you can subtract from the selected area, add to it, or intersect it with the newly selected region, respectively.
+whatsThis.tool.text = TODO Inserts text. The text can be edited after insertion by clicking on it again with the Text tool. Note that the text cannot be edited any more if the file is saved and reloaded, or if the Transform tool is used on the inserted text.
+whatsThis.tool.transform = TODO The selection can be resized with the blue handles, rotated with the red handle, or moved around. By pressing Shift you can transform the selection in perspective mode, which means you can rotate the selection in 3D, skew it or move the individual corners freely.
+whatsThis.tool.wand = TODO Selects a contiguous area with similarly colored pixels. With the controls below the toolbar, you can configure tolerance and whether the tool should select unconnected but similarly colored areas as well.
+
+whatsThis.toolBehaviour.contiguous = TODO If checked, then only connected parts are filled or selected. If not checked, then all similarly colored areas of the image are considered, even remote ones.
+whatsThis.toolBehaviour.retouchMode = TODO Filter to apply when using the retouch tool.
+whatsThis.toolBehaviour.sampleAllLayers = TODO If checked, then the color values are taken from the flattened image, i.e. with all layers rendered on top of each other. If not checked, then only the pixel values in the selected layer(s) are considered.
+whatsThis.toolBehaviour.tolerance = TODO Maximum allowed difference in color values. A tolerance of 0 only allows identical colors.

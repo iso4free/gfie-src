@@ -136,7 +136,7 @@ function PNGCompressIcon(w, h, Limit: integer): boolean;
 implementation
 
 uses
-  GFIEFormat, ICO, ANI, ICNS, PNG, XPM, BMP, GIF, Jpeg2000, PCX, Targa,
+  GFIEFormat, ICO, ANI, ICNS, PNG, XPM, BMP, {GIF, Jpeg2000, }PCX, Targa,
   ImageConverter_Intf, ieShared, Dialogs, LangPack;
 
 const
@@ -164,13 +164,15 @@ begin
     if icoDetect(@Header, HeaderSize, True) then Result := iftCur else
     if aniDetect(@Header, HeaderSize) then Result := iftAni else
     if icnsDetect(@Header, HeaderSize) then Result := iftIcns else
-    if pngDetect(@Header, HeaderSize) then Result := iftPng else
+    { #todo 1 -oiso4free : change to BGRABitmap }
+    //if pngDetect(@Header, HeaderSize) then Result := iftPng else
     if xpmDetect(@Header, HeaderSize) then Result := iftXpm else
     if bmpDetect(@Header, HeaderSize) then Result := iftBmp else
-    if jpegDetect(@Header, HeaderSize) then Result := iftJpeg else
-    if gifDetect(@Header, HeaderSize) then Result := iftGif else
+    { #todo 1 -oiso4free : change to BGRABitmap }
+    //if jpegDetect(@Header, HeaderSize) then Result := iftJpeg else
+    //if gifDetect(@Header, HeaderSize) then Result := iftGif else
     if tiffDetect(@Header, HeaderSize) then Result := iftTiff else
-    if jp2Detect(@Header, HeaderSize) then Result := iftJpeg2000 else
+    //if jp2Detect(@Header, HeaderSize) then Result := iftJpeg2000 else
     if pcxDetect(@Header, HeaderSize) then Result := iftPcx else
     if svgDetect(@Header, HeaderSize) then Result := iftSvg else
     // PBM, PGM and PPM are a subset of PNM, so do not detect them separately
@@ -479,10 +481,11 @@ begin
         bm := TBitmap32.Create;
         try
           case FileType of
-            iftPng: if not pngLoadFromStream(bm, s, Page.DPI) then Exit;
+            { #todo -oiso4free : change to BGRABitmap }
+            //iftPng: if not pngLoadFromStream(bm, s, Page.DPI) then Exit;
             iftXpm: if not xpmLoadFromStream(bm, Page.HotSpot, s) then Exit;
             iftBmp: if not bmpLoadFromStream(bm, s) then Exit;
-            iftJpeg2000: if not jp2LoadFromStream(bm, s) then Exit;
+            //iftJpeg2000: if not jp2LoadFromStream(bm, s) then Exit;
             iftPcx: begin
               if not pcxLoadFromStream(bm, hdpi, vdpi, s) then Exit;
               Page.DPI := 0.5*(Integer(hdpi) + vdpi);
@@ -501,9 +504,9 @@ begin
           bm.Free;
         end;
       end; // case single-page
-
-      iftJpeg: if not jpegLoadDocFromStream(Self, s) then Exit;
-      iftGif: if not gifLoadFromStream(Self, s, MaxWidth, MaxHeight) then Exit;
+      { #todo 1 -oiso4free : change to BGRABitmap }
+      //iftJpeg: if not jpegLoadDocFromStream(Self, s) then Exit;
+      //iftGif: if not gifLoadFromStream(Self, s, MaxWidth, MaxHeight) then Exit;
       iftTiff: if not tiffLoadFromStream(Self, s) then Exit;
       iftSvg: if not svgLoadFromStream(Self, s, vectorScaleFactor) then Exit;
     end; // case FileType
@@ -596,13 +599,14 @@ begin
     ColorLoss := False;
     case FileType of
       iftXpm: ColorLoss := (GetPixelFormat32(bmFirst, nil, nil, nil, nil) = pf32_32bit);
-
-      iftGif: begin
+       { #todo -oiso4free : change to BGRABitmap }
+      {iftGif: begin
         bm := TBitmap32.Create;
         try
           for i := 0 to PageCount - 1 do
           begin
             bm.Assign(Pages[i].Layers);
+
             if not gifGet256Colors(bm, nil, Transparent) then
             begin
               ColorLoss := True;
@@ -612,7 +616,7 @@ begin
         finally
           bm.Free;
         end;
-      end;
+      end; }
 
       iftPbm: ColorLoss := (GetPixelFormat32(bmFirst, nil, nil, nil, nil) > pf32_1bit);
       iftPgm: ColorLoss := not IsGray(bmFirst);
@@ -631,17 +635,17 @@ begin
         icnsSaveToStream(Self, s, DroppedPages);
         if Length(DroppedPages) > 0 then DataLoss += [dlIcns];
       end;
-
-      iftPng: pngSaveToStream(bmFirst, s, PNG_COMPRESSION_HIGH, onePageDPI);
+      { #todo 1 -oiso4free : change to BGRABitmap }
+      //iftPng: pngSaveToStream(bmFirst, s, PNG_COMPRESSION_HIGH, onePageDPI);
       iftXpm: begin
         if PageCount > 0 then pt := Pages[0].HotSpot else pt := Point(0, 0);
         xpmSaveToStream(bmFirst, xpmID, pt, s);
       end;
       iftBmp: bmpSaveToStream(bmFirst, s);
-      iftJpeg: jpegSaveDocToStream(Self, s, Round(Quality));
-      iftGif: gifSaveToStream(Self, s);
+      //iftJpeg: jpegSaveDocToStream(Self, s, Round(Quality));
+      //iftGif: gifSaveToStream(Self, s);
       iftTiff: DataLoss += tiffSaveToStream(Self, s);
-      iftJpeg2000: jp2SaveToStream(bmFirst, s, IfThen(Lossless, 0, Quality));
+      //iftJpeg2000: jp2SaveToStream(bmFirst, s, IfThen(Lossless, 0, Quality));
       iftPcx: begin
         pcxDpi := Round(Min(High(pcxDpi), onePageDPI));
         pcxSaveToStream(bmFirst, pcxDpi, pcxDpi, s);

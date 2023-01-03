@@ -135,7 +135,7 @@ const
 implementation
 
 uses
-  PNG, Jpeg2000, Layers;
+ { PNG, Jpeg2000,} Layers;
 
 const
   // These are the tags which always represent a mask
@@ -213,8 +213,9 @@ begin
         s.Position := 0;
 
         // try to decode image
-        if not pngLoadFromStream(bm, s, dpi) and
-          not jp2LoadFromStream(bm, s) then
+        { #todo 1 -oiso4free : change to BGRABitmap }
+        {if not pngLoadFromStream(bm, s, dpi) and
+          not jp2LoadFromStream(bm, s) then   }
             Exit(false); // there is nothing we can do
       finally
         s.Free;
@@ -601,10 +602,11 @@ begin
       begin
         st := TMemoryStream.Create;
         try
-          if ImageTag = it1024x1024_32 then
+          { #todo 1 -oiso4free : change to BGRABitmap }
+          {if ImageTag = it1024x1024_32 then
             pngSaveToStream(bm, st, PNG_COMPRESSION_HIGH, 0.0)
           else
-            jp2SaveToStream(bm, st, 0); // lossless JP2
+            jp2SaveToStream(bm, st, 0); // lossless JP2  }
           st.Position := 0;
           SetLength(ri.Data, st.Size);
           st.ReadBuffer(ri.Data[0], st.Size);

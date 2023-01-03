@@ -312,7 +312,8 @@ begin
     ['-mt', fnInput, '-o', fnOutput]);
   if HelperExitCode = 0 then
   begin
-    Result := pngLoadFromFile(bm, fnOutput);
+    { #todo 1 -oiso4free : change to BGRABitmap }
+    //Result := pngLoadFromFile(bm, fnOutput);
   end else
   begin
     {$IFDEF GFIEDEBUG}
@@ -335,7 +336,8 @@ var
 
 begin
   fnInput := GetTempFileName; // a file that GFIE can produce
-  pngSaveToFile(bm, fnInput, PNG_COMPRESSION_NORMAL);
+  { #todo 1 -oiso4free : change to BGRABitmap }
+  //pngSaveToFile(bm, fnInput, PNG_COMPRESSION_NORMAL);
   fnOutput := GetTempFileName;
 
   lossless := (Quality = 0);

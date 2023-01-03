@@ -30,7 +30,7 @@ uses
   {$IFNDEF LCL} Windows, Messages,
   {$ELSE} LclIntf, LclType, LResources, {$ENDIF}
   SysUtils, Types, Classes, Controls, Forms, Graphics,
-  StdCtrls, Math, DoubleBufPB, dialogs, GenericList;
+  StdCtrls, Math, DoubleBufPB, dialogs, fgl;
 
 const
   DBL_CLICK_INTERVAL = 400; // ms
@@ -39,6 +39,8 @@ const
 type
   TgflbLayout = (lbloHorizontal, lbloVertical);
   TgflbMouseAction = (lbmaNone, lbmaSelecting, lbmaStartDrag, lbmaDragging);
+
+  TIntList = specialize TFPGList<integer>;
 
   TgflbGetInt = procedure(Sender: TObject; var Value: integer) of object;
   TgflbItemGetBool = procedure(Sender: TObject; Index: integer; var Value: boolean) of object;
@@ -102,7 +104,7 @@ type
 
     LastPaintColor: TColor;
     NeedRedraw: boolean; // whole list
-    NeedRedrawItemIndex: TGenericList<integer>;
+    NeedRedrawItemIndex: TIntList;
     PrevClick: Cardinal; // GetTickCount() at previous mouse down event
     ma: TgflbMouseAction;
     pOrig: TPoint;
@@ -942,14 +944,14 @@ begin
   begin
     Parent := Self;
     LargeChange := 20;
-    OnChange := ScrollBarChange;
+    OnChange := @ScrollBarChange;
   end;
 
   FClientArea := TDoubleBufPB.Create(Self);
   ClientArea.Color := Color;
   LastPaintColor := Color;
   NeedRedraw := True;
-  NeedRedrawItemIndex := TGenericList<integer>.Create;
+  NeedRedrawItemIndex := TIntList.Create;
   with ClientArea do
   begin
     ControlStyle := ControlStyle+[csOpaque];
@@ -957,14 +959,14 @@ begin
     EraseBkGnd := false;
     Parent := Self;
     Align := alClient;
-    OnKeyDown := caKeyDown;
-    OnKillFocus := caKillFocus;
-    OnMouseDown := caMouseDown;
-    OnMouseMove := caMouseMove;
-    OnMouseUp := caMouseUp;
-    OnMouseWheel := caMouseWheel;
-    OnPaint := caPaint;
-    OnSetFocus := caSetFocus;
+    OnKeyDown := @caKeyDown;
+    OnKillFocus := @caKillFocus;
+    OnMouseDown := @caMouseDown;
+    OnMouseMove := @caMouseMove;
+    OnMouseUp := @caMouseUp;
+    OnMouseWheel := @caMouseWheel;
+    OnPaint := @caPaint;
+    OnSetFocus := @caSetFocus;
   end;
 
   SetScrollBarPlacement;

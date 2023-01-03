@@ -37,7 +37,7 @@ type
   private
     FAttachedEdit: TNumberEdit;
   protected
-    Dragging: boolean;
+    fDragging: boolean;
     PrevX: integer;
   public
     constructor Create(AOwner: TComponent); override;
@@ -65,7 +65,7 @@ type
   private
     FAttachedEdit: TNumberEdit;
   protected
-    Dragging: boolean;
+    fDragging: boolean;
     PrevX: integer;
   public
     constructor Create(AOwner: TComponent); override;
@@ -101,12 +101,12 @@ const
 
 // TAdjustLabel
 
-constructor TAdjustLabel.Create;
+constructor TAdjustLabel.Create(AOwner: TComponent);
 begin
   inherited;
 
   FAttachedEdit := nil;
-  Dragging := False;
+  fDragging := False;
   if not (csDesigning in ComponentState) then Cursor := crAdjust;
 {$IFDEF LCL}
   ControlStyle := ControlStyle + [csCaptureMouse];
@@ -114,19 +114,20 @@ begin
 {$ENDIF}
 end;
 
-procedure TAdjustLabel.MouseDown;
+procedure TAdjustLabel.MouseDown(Button: TMouseButton; Shift: TShiftState;
+      X, Y: Integer);
 begin
   inherited;
 
-  Dragging := True;
+  fDragging := True;
   PrevX := X;
 end;
 
-procedure TAdjustLabel.MouseMove;
+procedure TAdjustLabel.MouseMove(Shift: TShiftState; X, Y: Integer);
 begin
   inherited;
 
-  if Dragging and Assigned(AttachedEdit) then
+  if fDragging and Assigned(AttachedEdit) then
   begin
     with AttachedEdit do if Enabled then
       Value := Value + Increment * (X - PrevX);
@@ -134,21 +135,22 @@ begin
   end;
 end;
 
-procedure TAdjustLabel.MouseUp;
+procedure TAdjustLabel.MouseUp(Button: TMouseButton; Shift: TShiftState;
+      X, Y: Integer);
 begin
   inherited;
 
-  Dragging := False;
+  fDragging := False;
 end;
 
 // TAdjustImage
 
-constructor TAdjustImage.Create;
+constructor TAdjustImage.Create(AOwner: TComponent);
 begin
   inherited;
 
   FAttachedEdit := nil;
-  Dragging := False;
+  fDragging := False;
   if not (csDesigning in ComponentState) then Cursor := crAdjust;
 {$IFDEF LCL}
   ControlStyle := ControlStyle + [csCaptureMouse];
@@ -156,19 +158,20 @@ begin
 {$ENDIF}
 end;
 
-procedure TAdjustImage.MouseDown;
+procedure TAdjustImage.MouseDown(Button: TMouseButton; Shift: TShiftState;
+      X, Y: Integer);
 begin
   inherited;
 
-  Dragging := True;
+  fDragging := True;
   PrevX := X;
 end;
 
-procedure TAdjustImage.MouseMove;
+procedure TAdjustImage.MouseMove(Shift: TShiftState; X, Y: Integer);
 begin
   inherited;
 
-  if Dragging and Assigned(AttachedEdit) then
+  if fDragging and Assigned(AttachedEdit) then
   begin
     with AttachedEdit do if Enabled then
       Value := Value + Increment * (X - PrevX);
@@ -176,11 +179,12 @@ begin
   end;
 end;
 
-procedure TAdjustImage.MouseUp;
+procedure TAdjustImage.MouseUp(Button: TMouseButton; Shift: TShiftState;
+      X, Y: Integer);
 begin
   inherited;
 
-  Dragging := False;
+  fDragging := False;
 end;
 
 procedure Register;

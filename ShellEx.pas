@@ -21,7 +21,7 @@ interface
 
 uses
   {$IFDEF WINDOWS} Windows, Messages, {$ENDIF}
-  FileUtil, Forms, LclIntf, LclType, SysUtils, Dialogs;
+  FileUtil, Forms, LclIntf, LclType, SysUtils, Dialogs, LazUTF8;
 
 const
   // Open/Save dialog view modes (WPARAM)

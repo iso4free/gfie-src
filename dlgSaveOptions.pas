@@ -23,7 +23,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  NumberEdit, AdjustControl, dlgDoc, Layers, DocClass, Jpeg2000, BitmapEx,
+  NumberEdit, AdjustControl, dlgDoc, Layers, DocClass, {Jpeg2000,} BitmapEx,
   LangPack, Math, ImageConverter_Intf;
 
 const
@@ -83,7 +83,8 @@ begin
       Screen.Cursor := crHourGlass;
       try
         case FileType of
-          iftJpeg2000: begin
+          { #todo 1 -oiso4free : change to BGRABitmap }
+          {iftJpeg2000: begin
             jp2SaveToStream(bmToSave, st, IfThen(cbLossless.Checked, 0, neQuality.Value));
             st.Position := 0;
             jp2LoadFromStream(bmLoaded, st);
@@ -93,7 +94,7 @@ begin
             jpegSaveBitmapToStream(bmToSave, st, Round(neQuality.Value));
             st.Position := 0;
             jpegLoadBitmapFromStream(bmLoaded, st);
-          end;
+          end; }
 
           iftWebp: begin
             webpSaveToStream(bmToSave, st, Round(neQuality.Value));

@@ -25,7 +25,7 @@ uses
   Dialogs, ExtCtrls, Buttons, Menus, ResList, LangPack,
   BitmapEx, bmExUtils, Filters, DocClass, ieShared, ShellEx, StrUtils,
   gfListBox, gfMath, Math, dlgExeFormat, dlgDebug, types, BMP, UndoObject,
-  GenericList;
+  GenericList, LazUTF8;
 
 type
   TDlgResItemType = (dritIcon, dritCursor, dritBitmap);

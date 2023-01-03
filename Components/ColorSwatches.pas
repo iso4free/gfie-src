@@ -97,7 +97,7 @@ procedure Register;
 
 implementation
 
-procedure TColorSwatches.SetRollOverPos;
+procedure TColorSwatches.SetRollOverPos(const Value: TPoint);
 begin
   if (FRollOverPos.X <> Value.X) or (FRollOverPos.Y <> Value.Y) then
   begin
@@ -107,12 +107,12 @@ begin
   end;
 end;
 
-function TColorSwatches.GetColors;
+function TColorSwatches.GetColors(x, y: integer): TColor;
 begin
   Result := FColors[x, y];
 end;
 
-procedure TColorSwatches.SetColors;
+procedure TColorSwatches.SetColors(x, y: integer; const Value: TColor);
 begin
   if FColors[x, y] <> Value then
   begin
@@ -121,12 +121,12 @@ begin
   end;
 end;
 
-function TColorSwatches.GetDim;
+function TColorSwatches.GetDim(Index: integer): integer;
 begin
   Result := FDim[Index];
 end;
 
-procedure TColorSwatches.SetDim;
+procedure TColorSwatches.SetDim(Index, Value: integer);
 begin
   Value := Max(1, Min(MaxSwatch, Value));
   if FDim[Index] <> Value then
@@ -136,7 +136,7 @@ begin
   end;
 end;
 
-procedure TColorSwatches.SetColorsUsed;
+procedure TColorSwatches.SetColorsUsed(const Value: integer);
 begin
   if FColorsUsed <> Value then
   begin
@@ -145,7 +145,7 @@ begin
   end;
 end;
 
-procedure TColorSwatches.SetDrawGrid;
+procedure TColorSwatches.SetDrawGrid(const Value: boolean);
 begin
   if FDrawGrid <> Value then
   begin
@@ -154,13 +154,14 @@ begin
   end;
 end;
 
-procedure TColorSwatches.tmMouseTimer;
+procedure TColorSwatches.tmMouseTimer(Sender: TObject);
 begin
   if not PtInRect(ClientRect, ScreenToClient(Mouse.CursorPos)) then
     RollOverPos := Point(-1, -1);
 end;
 
-procedure TColorSwatches.MouseDown;
+procedure TColorSwatches.MouseDown(Button: TMouseButton; Shift: TShiftState;
+      X, Y: integer);
 begin
   inherited;
 
@@ -170,7 +171,7 @@ begin
       if (Button = mbRight) and Assigned(FOnEditing) then FOnEditing(Self, x, y);
 end;
 
-procedure TColorSwatches.MouseMove;
+procedure TColorSwatches.MouseMove(Shift: TShiftState; X, Y: integer);
 begin
   inherited;
 
@@ -254,7 +255,7 @@ begin
   ToggleRollOver;
 end;
 
-constructor TColorSwatches.Create;
+constructor TColorSwatches.Create(AOwner: TComponent);
 var
   i, j: integer;
   
@@ -273,7 +274,7 @@ begin
   FRollOverPos := Point(-1, -1);
   tmMouse := TTimer.Create(Self);
   tmMouse.Interval := 70;
-  tmMouse.OnTimer := tmMouseTimer;
+  tmMouse.OnTimer := @tmMouseTimer;
   tmMouse.Enabled := True;
 end;
 
@@ -284,13 +285,13 @@ begin
   inherited;
 end;
 
-function TColorSwatches.ItemRect;
+function TColorSwatches.ItemRect(x, y: integer): TRect;
 begin
   Result := Rect(x*(Width - 1) div Cols, y*(Height - 1) div Rows,
         (x + 1)*(Width - 1) div Cols, (y + 1)*(Height - 1) div Rows);
 end;
 
-function TColorSwatches.ItemAtPos;
+function TColorSwatches.ItemAtPos(x, y: integer): TPoint;
 begin
   Result := Point(Max(0, Min(Cols - 1, x * Cols div (Width - 1))),
     Max(0, Min(Rows - 1, y * Rows div (Height - 1))));

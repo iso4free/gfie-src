@@ -23,7 +23,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  NumberEdit, AdjustControl, dlgDoc, Layers, DocClass, Jpeg2000, BitmapEx,
+  NumberEdit, AdjustControl, dlgDoc, Layers, DocClass, {Jpeg2000,} BitmapEx,
   LangPack, Math;
 
 type
